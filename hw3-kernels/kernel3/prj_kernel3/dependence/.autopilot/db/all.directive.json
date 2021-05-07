@@ -1,0 +1,83 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "kernel3",
+          "label": "loop",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "kernel3",
+          "label": "loop",
+          "functionLabel": "",
+          "pragma": {
+            "name": "DEPENDENCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "index"
+              },
+              {
+                "name": "inter",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "false",
+                "value": "",
+                "positionalBoolean": "dependent"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "kernel3",
+          "label": "loop",
+          "functionLabel": "",
+          "pragma": {
+            "name": "DEPENDENCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "weight"
+              },
+              {
+                "name": "inter",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "false",
+                "value": "",
+                "positionalBoolean": "dependent"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "kernel3",
+          "label": "loop",
+          "functionLabel": "",
+          "pragma": {
+            "name": "DEPENDENCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "hist"
+              },
+              {
+                "name": "inter",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "false",
+                "value": "",
+                "positionalBoolean": "dependent"
+              }
+            ]
+          }
+        }
+      ]
+    }]}

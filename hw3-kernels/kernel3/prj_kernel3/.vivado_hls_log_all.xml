@@ -11,7 +11,17 @@
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog/>
+      <synLog>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'weight' (kernel3.cpp:3)." projectName="prj_kernel3" solutionName="test" date="2021-05-08T01:49:16.826+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'index' (kernel3.cpp:3)." projectName="prj_kernel3" solutionName="test" date="2021-05-08T01:49:16.795+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'hist' (kernel3.cpp:3)." projectName="prj_kernel3" solutionName="test" date="2021-05-08T01:49:16.779+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="pipeline" date="2021-05-08T01:37:19.869+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="pipeline" date="2021-05-08T01:37:19.854+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="pipeline" date="2021-05-08T01:37:19.838+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="pipeline" date="2021-05-08T01:37:19.822+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="pipeline" date="2021-05-08T01:37:19.807+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="pipeline" date="2021-05-08T01:37:19.791+0200" type="Warning"/>
+      </synLog>
       <simLog/>
       <mgLog/>
       <packageLog/>
