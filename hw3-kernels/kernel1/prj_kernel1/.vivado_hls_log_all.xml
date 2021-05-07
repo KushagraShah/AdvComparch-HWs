@@ -12,6 +12,7 @@
   <warningLogs>
     <logs>
       <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel1/array' to 'kernel1/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel1" solutionName="pipeline" date="2021-05-07T23:42:08.935+0200" type="Warning"/>
         <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel1/array' to 'kernel1/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel1" solutionName="original" date="2021-05-07T23:09:37.655+0200" type="Warning"/>
       </synLog>
       <simLog/>
