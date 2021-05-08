@@ -15,11 +15,13 @@
   "HlsSolution": {
     "DirectiveTcl": [
       "set_directive_pipeline kernel2\/loop ",
+      "set_directive_dependence kernel2\/loop ",
       "set_directive_dependence kernel2\/loop "
     ],
     "DirectiveInfo": [
       "pipeline kernel2\/loop {} {}",
-      "dependence kernel2\/loop {{variable array} {inter positionBoolean0type} {false positionBoolean0dependent}} {}"
+      "dependence kernel2\/loop {{variable array} {inter positionBoolean0type} {false positionBoolean0dependent}} {}",
+      "dependence kernel2\/loop {{variable accum} {inter positionBoolean0type} {false positionBoolean0dependent}} {}"
     ]
   },
   "Args": {"array": {
@@ -46,7 +48,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "2045",
+    "Latency": "2046",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -225,10 +227,10 @@
       }},
     "Metrics": {"kernel2": {
         "Latency": {
-          "LatencyBest": "2045",
-          "LatencyAvg": "2045",
-          "LatencyWorst": "2045",
-          "PipelineII": "2046",
+          "LatencyBest": "2046",
+          "LatencyAvg": "2046",
+          "LatencyWorst": "2046",
+          "PipelineII": "2047",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -240,14 +242,14 @@
         "Loops": [{
             "Name": "loop",
             "TripCount": "1021",
-            "Latency": "2043",
+            "Latency": "2042",
             "PipelineII": "2",
-            "PipelineDepth": "4"
+            "PipelineDepth": "3"
           }],
         "Area": {
-          "DSP48E": "3",
-          "FF": "124",
-          "LUT": "244",
+          "DSP48E": "6",
+          "FF": "159",
+          "LUT": "327",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -263,7 +265,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-05-08 03:46:34 +0200",
+    "Time": "2021-05-08 13:19:57 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

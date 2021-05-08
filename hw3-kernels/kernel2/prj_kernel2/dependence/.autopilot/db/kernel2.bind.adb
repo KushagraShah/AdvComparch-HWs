@@ -40,17 +40,17 @@
 			</item>
 		</ports>
 		<nodes class_id="8" tracking_level="0" version="0">
-			<count>23</count>
+			<count>29</count>
 			<item_version>0</item_version>
 			<item class_id="9" tracking_level="1" version="0" object_id="_2">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>4</id>
-						<name>_ln6</name>
+						<id>3</id>
+						<name>array_addr</name>
 						<fileName>kernel2.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>6</lineNumber>
+						<lineNumber>3</lineNumber>
 						<contextFuncName>kernel2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -65,7 +65,350 @@
 											<first>kernel2.cpp</first>
 											<second>kernel2</second>
 										</first>
+										<second>3</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>42</item>
+					<item>44</item>
+					<item>45</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>1</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_3">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>5</id>
+						<name>array_addr_1</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>6</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
 										<second>6</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>46</item>
+					<item>47</item>
+					<item>49</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>2</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_4">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>6</id>
+						<name>array_load</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>6</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>6</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>50</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.66</m_delay>
+				<m_topoIndex>3</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_5">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>7</id>
+						<name>array_load_1</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>6</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>6</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>51</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.66</m_delay>
+				<m_topoIndex>4</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_6">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>8</id>
+						<name>accum</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>6</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>6</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>accum</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>52</item>
+					<item>53</item>
+				</oprand_edges>
+				<opcode>mul</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>6.58</m_delay>
+				<m_topoIndex>7</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_7">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>9</id>
+						<name>array_addr_2</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>7</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>7</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>54</item>
+					<item>55</item>
+					<item>57</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>5</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_8">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>10</id>
+						<name>elem2</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>7</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>7</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>elem2</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>58</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.66</m_delay>
+				<m_topoIndex>6</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_9">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>11</id>
+						<name>_ln9</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>9</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>9</second>
 									</item>
 								</second>
 							</item>
@@ -79,7 +422,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>36</item>
+					<item>59</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -87,14 +430,51 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.06</m_delay>
-				<m_topoIndex>1</m_topoIndex>
+				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_3">
+			<item class_id_reference="9" object_id="_10">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>6</id>
+						<id>13</id>
+						<name>accum_0</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>accum</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>60</item>
+					<item>61</item>
+					<item>62</item>
+					<item>63</item>
+				</oprand_edges>
+				<opcode>phi</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>9</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_11">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>14</id>
 						<name>i_0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -108,15 +488,15 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>10</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
-					<item>38</item>
-					<item>39</item>
-					<item>40</item>
-					<item>41</item>
+					<item>65</item>
+					<item>66</item>
+					<item>67</item>
+					<item>68</item>
 				</oprand_edges>
 				<opcode>phi</opcode>
 				<m_Display>0</m_Display>
@@ -124,18 +504,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>2</m_topoIndex>
+				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_4">
+			<item class_id_reference="9" object_id="_12">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>7</id>
-						<name>icmp_ln6</name>
+						<id>15</id>
+						<name>icmp_ln9</name>
 						<fileName>kernel2.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>6</lineNumber>
+						<lineNumber>9</lineNumber>
 						<contextFuncName>kernel2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -150,7 +530,7 @@
 											<first>kernel2.cpp</first>
 											<second>kernel2</second>
 										</first>
-										<second>6</second>
+										<second>9</second>
 									</item>
 								</second>
 							</item>
@@ -164,27 +544,27 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>42</item>
-					<item>44</item>
+					<item>69</item>
+					<item>71</item>
 				</oprand_edges>
 				<opcode>icmp</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
-				<m_topoIndex>3</m_topoIndex>
+				<m_delay>1.32</m_delay>
+				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_5">
+			<item class_id_reference="9" object_id="_13">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>9</id>
-						<name>_ln6</name>
+						<id>17</id>
+						<name>_ln9</name>
 						<fileName>kernel2.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>6</lineNumber>
+						<lineNumber>9</lineNumber>
 						<contextFuncName>kernel2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -199,7 +579,7 @@
 											<first>kernel2.cpp</first>
 											<second>kernel2</second>
 										</first>
-										<second>6</second>
+										<second>9</second>
 									</item>
 								</second>
 							</item>
@@ -213,9 +593,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>45</item>
-					<item>46</item>
-					<item>47</item>
+					<item>72</item>
+					<item>73</item>
+					<item>74</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -223,397 +603,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>4</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_6">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>14</id>
-						<name>zext_ln8</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>48</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_7">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>15</id>
-						<name>array_addr</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>49</item>
-					<item>51</item>
-					<item>52</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_8">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>16</id>
-						<name>array_load</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>53</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>1</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>1</m_isLCDNode>
-				<m_isStartOfPath>1</m_isStartOfPath>
-				<m_delay>2.66</m_delay>
-				<m_topoIndex>15</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_9">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>17</id>
-						<name>add_ln8</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>54</item>
-					<item>55</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.41</m_delay>
-				<m_topoIndex>5</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_10">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>18</id>
-						<name>zext_ln8_1</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>56</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>6</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_11">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>19</id>
-						<name>array_addr_1</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>57</item>
-					<item>58</item>
-					<item>59</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>7</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_12">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>20</id>
-						<name>array_load_1</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>60</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.66</m_delay>
-				<m_topoIndex>8</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_13">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>21</id>
-						<name>add_ln8_1</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>61</item>
-					<item>63</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.41</m_delay>
-				<m_topoIndex>9</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_14">
@@ -621,10 +611,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>zext_ln8_2</name>
+						<name>add_ln11</name>
 						<fileName>kernel2.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>11</lineNumber>
 						<contextFuncName>kernel2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -639,153 +629,7 @@
 											<first>kernel2.cpp</first>
 											<second>kernel2</second>
 										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>64</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>10</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_15">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>23</id>
-						<name>array_addr_2</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>65</item>
-					<item>66</item>
-					<item>67</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>11</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_16">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>24</id>
-						<name>array_load_2</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>68</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.66</m_delay>
-				<m_topoIndex>12</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_17">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>25</id>
-						<name>mul_ln8</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
+										<second>11</second>
 									</item>
 								</second>
 							</item>
@@ -799,57 +643,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>69</item>
-					<item>70</item>
-				</oprand_edges>
-				<opcode>mul</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>6.58</m_delay>
-				<m_topoIndex>17</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_18">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>26</id>
-						<name>add_ln8_2</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>71</item>
-					<item>72</item>
+					<item>75</item>
+					<item>76</item>
 				</oprand_edges>
 				<opcode>add</opcode>
 				<m_Display>0</m_Display>
@@ -857,18 +652,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.78</m_delay>
-				<m_topoIndex>18</m_topoIndex>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_19">
+			<item class_id_reference="9" object_id="_15">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>27</id>
-						<name>i</name>
+						<id>23</id>
+						<name>zext_ln11</name>
 						<fileName>kernel2.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>11</lineNumber>
 						<contextFuncName>kernel2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -883,56 +678,7 @@
 											<first>kernel2.cpp</first>
 											<second>kernel2</second>
 										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>i</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>73</item>
-					<item>75</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.41</m_delay>
-				<m_topoIndex>16</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_20">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>28</id>
-						<name>zext_ln8_3</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
+										<second>11</second>
 									</item>
 								</second>
 							</item>
@@ -946,156 +692,9 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>76</item>
+					<item>77</item>
 				</oprand_edges>
 				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>19</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_21">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>29</id>
-						<name>array_addr_3</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>77</item>
-					<item>78</item>
-					<item>79</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>20</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_22">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>30</id>
-						<name>array_addr_3_write_ln8</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>80</item>
-					<item>81</item>
-				</oprand_edges>
-				<opcode>store</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.66</m_delay>
-				<m_topoIndex>21</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_23">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>32</id>
-						<name>_ln6</name>
-						<fileName>kernel2.cpp</fileName>
-						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>6</lineNumber>
-						<contextFuncName>kernel2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel2.cpp</first>
-											<second>kernel2</second>
-										</first>
-										<second>6</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>82</item>
-				</oprand_edges>
-				<opcode>br</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
@@ -1104,15 +703,15 @@
 				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_24">
+			<item class_id_reference="9" object_id="_16">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>34</id>
-						<name>_ln10</name>
+						<id>24</id>
+						<name>array_addr_3</name>
 						<fileName>kernel2.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
-						<lineNumber>10</lineNumber>
+						<lineNumber>11</lineNumber>
 						<contextFuncName>kernel2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1127,7 +726,691 @@
 											<first>kernel2.cpp</first>
 											<second>kernel2</second>
 										</first>
-										<second>10</second>
+										<second>11</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>78</item>
+					<item>79</item>
+					<item>80</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>23</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_17">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>25</id>
+						<name>array_addr_3_write_ln11</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>11</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>11</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>81</item>
+					<item>82</item>
+				</oprand_edges>
+				<opcode>store</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.66</m_delay>
+				<m_topoIndex>24</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_18">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>26</id>
+						<name>add_ln12</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>12</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>83</item>
+					<item>85</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.42</m_delay>
+				<m_topoIndex>13</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_19">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>27</id>
+						<name>zext_ln12</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>12</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>86</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>14</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_20">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>28</id>
+						<name>array_addr_4</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>12</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>87</item>
+					<item>88</item>
+					<item>89</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>15</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_21">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>29</id>
+						<name>array_load_3</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>12</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>90</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.66</m_delay>
+				<m_topoIndex>16</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_22">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>30</id>
+						<name>add_ln12_1</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>12</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>91</item>
+					<item>93</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.42</m_delay>
+				<m_topoIndex>17</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_23">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>31</id>
+						<name>zext_ln12_1</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>12</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>94</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>18</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_24">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>32</id>
+						<name>array_addr_5</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>12</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>95</item>
+					<item>96</item>
+					<item>97</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>19</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_25">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>33</id>
+						<name>array_load_4</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>12</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>98</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.66</m_delay>
+				<m_topoIndex>20</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_26">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>34</id>
+						<name>mul_ln12</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>12</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>99</item>
+					<item>100</item>
+				</oprand_edges>
+				<opcode>mul</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>6.58</m_delay>
+				<m_topoIndex>26</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_27">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>35</id>
+						<name>accum_1</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>12</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>accum</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>101</item>
+					<item>102</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.78</m_delay>
+				<m_topoIndex>27</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_28">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>37</id>
+						<name>i</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>9</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>9</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>i</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>103</item>
+					<item>105</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.42</m_delay>
+				<m_topoIndex>25</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_29">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>38</id>
+						<name>_ln9</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>9</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>9</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>106</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>28</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_30">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>40</id>
+						<name>_ln15</name>
+						<fileName>kernel2.cpp</fileName>
+						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</fileDirectory>
+						<lineNumber>15</lineNumber>
+						<contextFuncName>kernel2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel2</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel2.cpp</first>
+											<second>kernel2</second>
+										</first>
+										<second>15</second>
 									</item>
 								</second>
 							</item>
@@ -1148,64 +1431,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
+				<m_topoIndex>29</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
 		<consts class_id="15" tracking_level="0" version="0">
-			<count>5</count>
+			<count>8</count>
 			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_25">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>37</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>2</content>
-			</item>
-			<item class_id_reference="16" object_id="_26">
+			<item class_id="16" tracking_level="1" version="0" object_id="_31">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>43</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>1023</content>
-			</item>
-			<item class_id_reference="16" object_id="_27">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>50</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1224,11 +1461,11 @@
 				<const_type>0</const_type>
 				<content>0</content>
 			</item>
-			<item class_id_reference="16" object_id="_28">
+			<item class_id_reference="16" object_id="_32">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>62</id>
+						<id>48</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1242,16 +1479,16 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>10</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>1022</content>
+				<content>1</content>
 			</item>
-			<item class_id_reference="16" object_id="_29">
+			<item class_id_reference="16" object_id="_33">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>74</id>
+						<id>56</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1265,7 +1502,122 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>10</bitwidth>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>2</content>
+			</item>
+			<item class_id_reference="16" object_id="_34">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>64</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>3</content>
+			</item>
+			<item class_id_reference="16" object_id="_35">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>70</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>1024</content>
+			</item>
+			<item class_id_reference="16" object_id="_36">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>84</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>2047</content>
+			</item>
+			<item class_id_reference="16" object_id="_37">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>92</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>2046</content>
+			</item>
+			<item class_id_reference="16" object_id="_38">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>104</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -1274,10 +1626,10 @@
 		<blocks class_id="17" tracking_level="0" version="0">
 			<count>4</count>
 			<item_version>0</item_version>
-			<item class_id="18" tracking_level="1" version="0" object_id="_30">
+			<item class_id="18" tracking_level="1" version="0" object_id="_39">
 				<Obj>
 					<type>3</type>
-					<id>5</id>
+					<id>12</id>
 					<name></name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -1292,40 +1644,48 @@
 					<coreName></coreName>
 				</Obj>
 				<node_objs>
-					<count>1</count>
+					<count>8</count>
 					<item_version>0</item_version>
-					<item>4</item>
-				</node_objs>
-			</item>
-			<item class_id_reference="18" object_id="_31">
-				<Obj>
-					<type>3</type>
-					<id>10</id>
-					<name></name>
-					<fileName></fileName>
-					<fileDirectory></fileDirectory>
-					<lineNumber>0</lineNumber>
-					<contextFuncName></contextFuncName>
-					<inlineStackInfo>
-						<count>0</count>
-						<item_version>0</item_version>
-					</inlineStackInfo>
-					<originalName></originalName>
-					<rtlName></rtlName>
-					<coreName></coreName>
-				</Obj>
-				<node_objs>
-					<count>3</count>
-					<item_version>0</item_version>
+					<item>3</item>
+					<item>5</item>
 					<item>6</item>
 					<item>7</item>
+					<item>8</item>
 					<item>9</item>
+					<item>10</item>
+					<item>11</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_32">
+			<item class_id_reference="18" object_id="_40">
 				<Obj>
 					<type>3</type>
-					<id>33</id>
+					<id>18</id>
+					<name></name>
+					<fileName></fileName>
+					<fileDirectory></fileDirectory>
+					<lineNumber>0</lineNumber>
+					<contextFuncName></contextFuncName>
+					<inlineStackInfo>
+						<count>0</count>
+						<item_version>0</item_version>
+					</inlineStackInfo>
+					<originalName></originalName>
+					<rtlName></rtlName>
+					<coreName></coreName>
+				</Obj>
+				<node_objs>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>13</item>
+					<item>14</item>
+					<item>15</item>
+					<item>17</item>
+				</node_objs>
+			</item>
+			<item class_id_reference="18" object_id="_41">
+				<Obj>
+					<type>3</type>
+					<id>39</id>
 					<name>loop</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -1340,16 +1700,8 @@
 					<coreName></coreName>
 				</Obj>
 				<node_objs>
-					<count>18</count>
+					<count>16</count>
 					<item_version>0</item_version>
-					<item>14</item>
-					<item>15</item>
-					<item>16</item>
-					<item>17</item>
-					<item>18</item>
-					<item>19</item>
-					<item>20</item>
-					<item>21</item>
 					<item>22</item>
 					<item>23</item>
 					<item>24</item>
@@ -1359,13 +1711,19 @@
 					<item>28</item>
 					<item>29</item>
 					<item>30</item>
+					<item>31</item>
 					<item>32</item>
+					<item>33</item>
+					<item>34</item>
+					<item>35</item>
+					<item>37</item>
+					<item>38</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_33">
+			<item class_id_reference="18" object_id="_42">
 				<Obj>
 					<type>3</type>
-					<id>35</id>
+					<id>41</id>
 					<name></name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -1382,333 +1740,438 @@
 				<node_objs>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>34</item>
+					<item>40</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>46</count>
+			<count>61</count>
 			<item_version>0</item_version>
-			<item class_id="20" tracking_level="1" version="0" object_id="_34">
-				<id>36</id>
-				<edge_type>2</edge_type>
-				<source_obj>10</source_obj>
-				<sink_obj>4</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_35">
-				<id>38</id>
+			<item class_id="20" tracking_level="1" version="0" object_id="_43">
+				<id>42</id>
 				<edge_type>1</edge_type>
-				<source_obj>37</source_obj>
-				<sink_obj>6</sink_obj>
+				<source_obj>1</source_obj>
+				<sink_obj>3</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_36">
-				<id>39</id>
-				<edge_type>2</edge_type>
+			<item class_id_reference="20" object_id="_44">
+				<id>44</id>
+				<edge_type>1</edge_type>
+				<source_obj>43</source_obj>
+				<sink_obj>3</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_45">
+				<id>45</id>
+				<edge_type>1</edge_type>
+				<source_obj>43</source_obj>
+				<sink_obj>3</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_46">
+				<id>46</id>
+				<edge_type>1</edge_type>
+				<source_obj>1</source_obj>
+				<sink_obj>5</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_47">
+				<id>47</id>
+				<edge_type>1</edge_type>
+				<source_obj>43</source_obj>
+				<sink_obj>5</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_48">
+				<id>49</id>
+				<edge_type>1</edge_type>
+				<source_obj>48</source_obj>
+				<sink_obj>5</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_49">
+				<id>50</id>
+				<edge_type>1</edge_type>
 				<source_obj>5</source_obj>
 				<sink_obj>6</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_37">
-				<id>40</id>
+			<item class_id_reference="20" object_id="_50">
+				<id>51</id>
 				<edge_type>1</edge_type>
-				<source_obj>27</source_obj>
-				<sink_obj>6</sink_obj>
-				<is_back_edge>1</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_38">
-				<id>41</id>
-				<edge_type>2</edge_type>
-				<source_obj>33</source_obj>
-				<sink_obj>6</sink_obj>
-				<is_back_edge>1</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_39">
-				<id>42</id>
-				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
+				<source_obj>3</source_obj>
 				<sink_obj>7</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_40">
-				<id>44</id>
-				<edge_type>1</edge_type>
-				<source_obj>43</source_obj>
-				<sink_obj>7</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_41">
-				<id>45</id>
+			<item class_id_reference="20" object_id="_51">
+				<id>52</id>
 				<edge_type>1</edge_type>
 				<source_obj>7</source_obj>
-				<sink_obj>9</sink_obj>
+				<sink_obj>8</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_42">
-				<id>46</id>
-				<edge_type>2</edge_type>
-				<source_obj>33</source_obj>
-				<sink_obj>9</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_43">
-				<id>47</id>
-				<edge_type>2</edge_type>
-				<source_obj>35</source_obj>
-				<sink_obj>9</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_44">
-				<id>48</id>
+			<item class_id_reference="20" object_id="_52">
+				<id>53</id>
 				<edge_type>1</edge_type>
 				<source_obj>6</source_obj>
+				<sink_obj>8</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_53">
+				<id>54</id>
+				<edge_type>1</edge_type>
+				<source_obj>1</source_obj>
+				<sink_obj>9</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_54">
+				<id>55</id>
+				<edge_type>1</edge_type>
+				<source_obj>43</source_obj>
+				<sink_obj>9</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_55">
+				<id>57</id>
+				<edge_type>1</edge_type>
+				<source_obj>56</source_obj>
+				<sink_obj>9</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_56">
+				<id>58</id>
+				<edge_type>1</edge_type>
+				<source_obj>9</source_obj>
+				<sink_obj>10</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_57">
+				<id>59</id>
+				<edge_type>2</edge_type>
+				<source_obj>18</source_obj>
+				<sink_obj>11</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_58">
+				<id>60</id>
+				<edge_type>1</edge_type>
+				<source_obj>8</source_obj>
+				<sink_obj>13</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_59">
+				<id>61</id>
+				<edge_type>2</edge_type>
+				<source_obj>12</source_obj>
+				<sink_obj>13</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_60">
+				<id>62</id>
+				<edge_type>1</edge_type>
+				<source_obj>35</source_obj>
+				<sink_obj>13</sink_obj>
+				<is_back_edge>1</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_61">
+				<id>63</id>
+				<edge_type>2</edge_type>
+				<source_obj>39</source_obj>
+				<sink_obj>13</sink_obj>
+				<is_back_edge>1</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_62">
+				<id>65</id>
+				<edge_type>1</edge_type>
+				<source_obj>64</source_obj>
 				<sink_obj>14</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_45">
-				<id>49</id>
-				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
-				<sink_obj>15</sink_obj>
+			<item class_id_reference="20" object_id="_63">
+				<id>66</id>
+				<edge_type>2</edge_type>
+				<source_obj>12</source_obj>
+				<sink_obj>14</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_46">
-				<id>51</id>
+			<item class_id_reference="20" object_id="_64">
+				<id>67</id>
 				<edge_type>1</edge_type>
-				<source_obj>50</source_obj>
-				<sink_obj>15</sink_obj>
-				<is_back_edge>0</is_back_edge>
+				<source_obj>37</source_obj>
+				<sink_obj>14</sink_obj>
+				<is_back_edge>1</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_47">
-				<id>52</id>
+			<item class_id_reference="20" object_id="_65">
+				<id>68</id>
+				<edge_type>2</edge_type>
+				<source_obj>39</source_obj>
+				<sink_obj>14</sink_obj>
+				<is_back_edge>1</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_66">
+				<id>69</id>
 				<edge_type>1</edge_type>
 				<source_obj>14</source_obj>
 				<sink_obj>15</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_48">
-				<id>53</id>
+			<item class_id_reference="20" object_id="_67">
+				<id>71</id>
+				<edge_type>1</edge_type>
+				<source_obj>70</source_obj>
+				<sink_obj>15</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_68">
+				<id>72</id>
 				<edge_type>1</edge_type>
 				<source_obj>15</source_obj>
-				<sink_obj>16</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_49">
-				<id>54</id>
-				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
 				<sink_obj>17</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_50">
-				<id>55</id>
-				<edge_type>1</edge_type>
-				<source_obj>43</source_obj>
+			<item class_id_reference="20" object_id="_69">
+				<id>73</id>
+				<edge_type>2</edge_type>
+				<source_obj>39</source_obj>
 				<sink_obj>17</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_51">
-				<id>56</id>
-				<edge_type>1</edge_type>
-				<source_obj>17</source_obj>
-				<sink_obj>18</sink_obj>
+			<item class_id_reference="20" object_id="_70">
+				<id>74</id>
+				<edge_type>2</edge_type>
+				<source_obj>41</source_obj>
+				<sink_obj>17</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_52">
-				<id>57</id>
+			<item class_id_reference="20" object_id="_71">
+				<id>75</id>
 				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
-				<sink_obj>19</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_53">
-				<id>58</id>
-				<edge_type>1</edge_type>
-				<source_obj>50</source_obj>
-				<sink_obj>19</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_54">
-				<id>59</id>
-				<edge_type>1</edge_type>
-				<source_obj>18</source_obj>
-				<sink_obj>19</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_55">
-				<id>60</id>
-				<edge_type>1</edge_type>
-				<source_obj>19</source_obj>
-				<sink_obj>20</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_56">
-				<id>61</id>
-				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
-				<sink_obj>21</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_57">
-				<id>63</id>
-				<edge_type>1</edge_type>
-				<source_obj>62</source_obj>
-				<sink_obj>21</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_58">
-				<id>64</id>
-				<edge_type>1</edge_type>
-				<source_obj>21</source_obj>
+				<source_obj>10</source_obj>
 				<sink_obj>22</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_59">
-				<id>65</id>
+			<item class_id_reference="20" object_id="_72">
+				<id>76</id>
+				<edge_type>1</edge_type>
+				<source_obj>13</source_obj>
+				<sink_obj>22</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_73">
+				<id>77</id>
+				<edge_type>1</edge_type>
+				<source_obj>14</source_obj>
+				<sink_obj>23</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_74">
+				<id>78</id>
 				<edge_type>1</edge_type>
 				<source_obj>1</source_obj>
-				<sink_obj>23</sink_obj>
+				<sink_obj>24</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_60">
-				<id>66</id>
+			<item class_id_reference="20" object_id="_75">
+				<id>79</id>
 				<edge_type>1</edge_type>
-				<source_obj>50</source_obj>
-				<sink_obj>23</sink_obj>
+				<source_obj>43</source_obj>
+				<sink_obj>24</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_61">
-				<id>67</id>
-				<edge_type>1</edge_type>
-				<source_obj>22</source_obj>
-				<sink_obj>23</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_62">
-				<id>68</id>
+			<item class_id_reference="20" object_id="_76">
+				<id>80</id>
 				<edge_type>1</edge_type>
 				<source_obj>23</source_obj>
 				<sink_obj>24</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_63">
-				<id>69</id>
+			<item class_id_reference="20" object_id="_77">
+				<id>81</id>
 				<edge_type>1</edge_type>
-				<source_obj>20</source_obj>
+				<source_obj>22</source_obj>
 				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_64">
-				<id>70</id>
+			<item class_id_reference="20" object_id="_78">
+				<id>82</id>
 				<edge_type>1</edge_type>
 				<source_obj>24</source_obj>
 				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_65">
-				<id>71</id>
+			<item class_id_reference="20" object_id="_79">
+				<id>83</id>
 				<edge_type>1</edge_type>
-				<source_obj>16</source_obj>
+				<source_obj>14</source_obj>
 				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_66">
-				<id>72</id>
+			<item class_id_reference="20" object_id="_80">
+				<id>85</id>
 				<edge_type>1</edge_type>
-				<source_obj>25</source_obj>
+				<source_obj>84</source_obj>
 				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_67">
-				<id>73</id>
+			<item class_id_reference="20" object_id="_81">
+				<id>86</id>
 				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
+				<source_obj>26</source_obj>
 				<sink_obj>27</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_68">
-				<id>75</id>
+			<item class_id_reference="20" object_id="_82">
+				<id>87</id>
 				<edge_type>1</edge_type>
-				<source_obj>74</source_obj>
-				<sink_obj>27</sink_obj>
+				<source_obj>1</source_obj>
+				<sink_obj>28</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_69">
-				<id>76</id>
+			<item class_id_reference="20" object_id="_83">
+				<id>88</id>
+				<edge_type>1</edge_type>
+				<source_obj>43</source_obj>
+				<sink_obj>28</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_84">
+				<id>89</id>
 				<edge_type>1</edge_type>
 				<source_obj>27</source_obj>
 				<sink_obj>28</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_70">
-				<id>77</id>
-				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
-				<sink_obj>29</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_71">
-				<id>78</id>
-				<edge_type>1</edge_type>
-				<source_obj>50</source_obj>
-				<sink_obj>29</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_72">
-				<id>79</id>
+			<item class_id_reference="20" object_id="_85">
+				<id>90</id>
 				<edge_type>1</edge_type>
 				<source_obj>28</source_obj>
 				<sink_obj>29</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_73">
-				<id>80</id>
+			<item class_id_reference="20" object_id="_86">
+				<id>91</id>
 				<edge_type>1</edge_type>
-				<source_obj>26</source_obj>
+				<source_obj>14</source_obj>
 				<sink_obj>30</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_74">
-				<id>81</id>
+			<item class_id_reference="20" object_id="_87">
+				<id>93</id>
 				<edge_type>1</edge_type>
-				<source_obj>29</source_obj>
+				<source_obj>92</source_obj>
 				<sink_obj>30</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_75">
-				<id>82</id>
-				<edge_type>2</edge_type>
-				<source_obj>10</source_obj>
+			<item class_id_reference="20" object_id="_88">
+				<id>94</id>
+				<edge_type>1</edge_type>
+				<source_obj>30</source_obj>
+				<sink_obj>31</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_89">
+				<id>95</id>
+				<edge_type>1</edge_type>
+				<source_obj>1</source_obj>
 				<sink_obj>32</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_76">
-				<id>121</id>
-				<edge_type>2</edge_type>
-				<source_obj>5</source_obj>
-				<sink_obj>10</sink_obj>
+			<item class_id_reference="20" object_id="_90">
+				<id>96</id>
+				<edge_type>1</edge_type>
+				<source_obj>43</source_obj>
+				<sink_obj>32</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_77">
-				<id>122</id>
-				<edge_type>2</edge_type>
-				<source_obj>10</source_obj>
-				<sink_obj>35</sink_obj>
+			<item class_id_reference="20" object_id="_91">
+				<id>97</id>
+				<edge_type>1</edge_type>
+				<source_obj>31</source_obj>
+				<sink_obj>32</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_78">
-				<id>123</id>
-				<edge_type>2</edge_type>
-				<source_obj>10</source_obj>
+			<item class_id_reference="20" object_id="_92">
+				<id>98</id>
+				<edge_type>1</edge_type>
+				<source_obj>32</source_obj>
 				<sink_obj>33</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_79">
-				<id>124</id>
-				<edge_type>2</edge_type>
+			<item class_id_reference="20" object_id="_93">
+				<id>99</id>
+				<edge_type>1</edge_type>
+				<source_obj>29</source_obj>
+				<sink_obj>34</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_94">
+				<id>100</id>
+				<edge_type>1</edge_type>
 				<source_obj>33</source_obj>
-				<sink_obj>10</sink_obj>
+				<sink_obj>34</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_95">
+				<id>101</id>
+				<edge_type>1</edge_type>
+				<source_obj>34</source_obj>
+				<sink_obj>35</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_96">
+				<id>102</id>
+				<edge_type>1</edge_type>
+				<source_obj>13</source_obj>
+				<sink_obj>35</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_97">
+				<id>103</id>
+				<edge_type>1</edge_type>
+				<source_obj>14</source_obj>
+				<sink_obj>37</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_98">
+				<id>105</id>
+				<edge_type>1</edge_type>
+				<source_obj>104</source_obj>
+				<sink_obj>37</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_99">
+				<id>106</id>
+				<edge_type>2</edge_type>
+				<source_obj>18</source_obj>
+				<sink_obj>38</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_100">
+				<id>145</id>
+				<edge_type>2</edge_type>
+				<source_obj>12</source_obj>
+				<sink_obj>18</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_101">
+				<id>146</id>
+				<edge_type>2</edge_type>
+				<source_obj>18</source_obj>
+				<sink_obj>41</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_102">
+				<id>147</id>
+				<edge_type>2</edge_type>
+				<source_obj>18</source_obj>
+				<sink_obj>39</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_103">
+				<id>148</id>
+				<edge_type>2</edge_type>
+				<source_obj>39</source_obj>
+				<sink_obj>18</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
 		</edges>
@@ -1716,7 +2179,7 @@
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>4</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_80">
+		<item class_id="22" tracking_level="1" version="0" object_id="_104">
 			<mId>1</mId>
 			<mTag>kernel2</mTag>
 			<mType>0</mType>
@@ -1735,12 +2198,12 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>2045</mMinLatency>
-			<mMaxLatency>2045</mMaxLatency>
+			<mMinLatency>2046</mMinLatency>
+			<mMaxLatency>2046</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_81">
+		<item class_id_reference="22" object_id="_105">
 			<mId>2</mId>
 			<mTag>Entry</mTag>
 			<mType>0</mType>
@@ -1751,18 +2214,18 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>5</item>
+				<item>12</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>0</mMinLatency>
-			<mMaxLatency>0</mMaxLatency>
+			<mMinLatency>2</mMinLatency>
+			<mMaxLatency>2</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_82">
+		<item class_id_reference="22" object_id="_106">
 			<mId>3</mId>
 			<mTag>loop</mTag>
 			<mType>1</mType>
@@ -1773,19 +2236,19 @@
 			<basic_blocks>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>10</item>
-				<item>33</item>
+				<item>18</item>
+				<item>39</item>
 			</basic_blocks>
 			<mII>2</mII>
-			<mDepth>4</mDepth>
+			<mDepth>3</mDepth>
 			<mMinTripCount>1021</mMinTripCount>
 			<mMaxTripCount>1021</mMaxTripCount>
-			<mMinLatency>2043</mMinLatency>
-			<mMaxLatency>2043</mMaxLatency>
+			<mMinLatency>2042</mMinLatency>
+			<mMaxLatency>2042</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_83">
+		<item class_id_reference="22" object_id="_107">
 			<mId>4</mId>
 			<mTag>Return</mTag>
 			<mType>0</mType>
@@ -1796,7 +2259,7 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>35</item>
+				<item>41</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
@@ -1808,212 +2271,259 @@
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
 	</cdfg_regions>
-	<fsm class_id="24" tracking_level="1" version="0" object_id="_84">
+	<fsm class_id="24" tracking_level="1" version="0" object_id="_108">
 		<states class_id="25" tracking_level="0" version="0">
-			<count>6</count>
+			<count>7</count>
 			<item_version>0</item_version>
-			<item class_id="26" tracking_level="1" version="0" object_id="_85">
+			<item class_id="26" tracking_level="1" version="0" object_id="_109">
 				<id>1</id>
 				<operations class_id="27" tracking_level="0" version="0">
-					<count>3</count>
+					<count>4</count>
 					<item_version>0</item_version>
-					<item class_id="28" tracking_level="1" version="0" object_id="_86">
-						<id>2</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_87">
+					<item class_id="28" tracking_level="1" version="0" object_id="_110">
 						<id>3</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_88">
-						<id>4</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-				</operations>
-			</item>
-			<item class_id_reference="26" object_id="_89">
-				<id>2</id>
-				<operations>
-					<count>12</count>
-					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_90">
-						<id>6</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_91">
-						<id>7</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_92">
-						<id>8</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_93">
-						<id>9</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_94">
-						<id>17</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_95">
-						<id>18</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_96">
-						<id>19</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_97">
-						<id>20</id>
-						<stage>2</stage>
-						<latency>2</latency>
-					</item>
-					<item class_id_reference="28" object_id="_98">
-						<id>21</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_99">
-						<id>22</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_100">
-						<id>23</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_101">
-						<id>24</id>
-						<stage>2</stage>
-						<latency>2</latency>
-					</item>
-				</operations>
-			</item>
-			<item class_id_reference="26" object_id="_102">
-				<id>3</id>
-				<operations>
-					<count>6</count>
-					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_103">
-						<id>14</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_104">
-						<id>15</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_105">
-						<id>16</id>
-						<stage>2</stage>
-						<latency>2</latency>
-					</item>
-					<item class_id_reference="28" object_id="_106">
-						<id>20</id>
-						<stage>1</stage>
-						<latency>2</latency>
-					</item>
-					<item class_id_reference="28" object_id="_107">
-						<id>24</id>
-						<stage>1</stage>
-						<latency>2</latency>
-					</item>
-					<item class_id_reference="28" object_id="_108">
-						<id>27</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-				</operations>
-			</item>
-			<item class_id_reference="26" object_id="_109">
-				<id>4</id>
-				<operations>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_110">
-						<id>16</id>
-						<stage>1</stage>
-						<latency>2</latency>
-					</item>
 					<item class_id_reference="28" object_id="_111">
-						<id>25</id>
+						<id>5</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_112">
-						<id>26</id>
-						<stage>1</stage>
-						<latency>1</latency>
+						<id>6</id>
+						<stage>2</stage>
+						<latency>2</latency>
+					</item>
+					<item class_id_reference="28" object_id="_113">
+						<id>7</id>
+						<stage>2</stage>
+						<latency>2</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_113">
-				<id>5</id>
+			<item class_id_reference="26" object_id="_114">
+				<id>2</id>
 				<operations>
-					<count>8</count>
+					<count>4</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_114">
-						<id>11</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
 					<item class_id_reference="28" object_id="_115">
-						<id>12</id>
+						<id>6</id>
 						<stage>1</stage>
-						<latency>1</latency>
+						<latency>2</latency>
 					</item>
 					<item class_id_reference="28" object_id="_116">
-						<id>13</id>
+						<id>7</id>
 						<stage>1</stage>
-						<latency>1</latency>
+						<latency>2</latency>
 					</item>
 					<item class_id_reference="28" object_id="_117">
-						<id>28</id>
+						<id>9</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_118">
-						<id>29</id>
-						<stage>1</stage>
-						<latency>1</latency>
+						<id>10</id>
+						<stage>2</stage>
+						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_119">
-						<id>30</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
+				</operations>
+			</item>
+			<item class_id_reference="26" object_id="_119">
+				<id>3</id>
+				<operations>
+					<count>5</count>
+					<item_version>0</item_version>
 					<item class_id_reference="28" object_id="_120">
-						<id>31</id>
+						<id>2</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_121">
-						<id>32</id>
+						<id>4</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_122">
+						<id>8</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_123">
+						<id>10</id>
+						<stage>1</stage>
+						<latency>2</latency>
+					</item>
+					<item class_id_reference="28" object_id="_124">
+						<id>11</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_122">
+			<item class_id_reference="26" object_id="_125">
+				<id>4</id>
+				<operations>
+					<count>13</count>
+					<item_version>0</item_version>
+					<item class_id_reference="28" object_id="_126">
+						<id>13</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_127">
+						<id>14</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_128">
+						<id>15</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_129">
+						<id>16</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_130">
+						<id>17</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_131">
+						<id>26</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_132">
+						<id>27</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_133">
+						<id>28</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_134">
+						<id>29</id>
+						<stage>2</stage>
+						<latency>2</latency>
+					</item>
+					<item class_id_reference="28" object_id="_135">
+						<id>30</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_136">
+						<id>31</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_137">
+						<id>32</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_138">
+						<id>33</id>
+						<stage>2</stage>
+						<latency>2</latency>
+					</item>
+				</operations>
+			</item>
+			<item class_id_reference="26" object_id="_139">
+				<id>5</id>
+				<operations>
+					<count>7</count>
+					<item_version>0</item_version>
+					<item class_id_reference="28" object_id="_140">
+						<id>22</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_141">
+						<id>23</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_142">
+						<id>24</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_143">
+						<id>25</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_144">
+						<id>29</id>
+						<stage>1</stage>
+						<latency>2</latency>
+					</item>
+					<item class_id_reference="28" object_id="_145">
+						<id>33</id>
+						<stage>1</stage>
+						<latency>2</latency>
+					</item>
+					<item class_id_reference="28" object_id="_146">
+						<id>37</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+				</operations>
+			</item>
+			<item class_id_reference="26" object_id="_147">
 				<id>6</id>
+				<operations>
+					<count>7</count>
+					<item_version>0</item_version>
+					<item class_id_reference="28" object_id="_148">
+						<id>19</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_149">
+						<id>20</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_150">
+						<id>21</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_151">
+						<id>34</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_152">
+						<id>35</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_153">
+						<id>36</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_154">
+						<id>38</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+				</operations>
+			</item>
+			<item class_id_reference="26" object_id="_155">
+				<id>7</id>
 				<operations>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_123">
-						<id>34</id>
+					<item class_id_reference="28" object_id="_156">
+						<id>40</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
@@ -2021,9 +2531,9 @@
 			</item>
 		</states>
 		<transitions class_id="29" tracking_level="0" version="0">
-			<count>6</count>
+			<count>7</count>
 			<item_version>0</item_version>
-			<item class_id="30" tracking_level="1" version="0" object_id="_124">
+			<item class_id="30" tracking_level="1" version="0" object_id="_157">
 				<inState>1</inState>
 				<outState>2</outState>
 				<condition class_id="31" tracking_level="0" version="0">
@@ -2038,7 +2548,22 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_125">
+			<item class_id_reference="30" object_id="_158">
+				<inState>2</inState>
+				<outState>3</outState>
+				<condition>
+					<id>-1</id>
+					<sop>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>
+							<count>0</count>
+							<item_version>0</item_version>
+						</item>
+					</sop>
+				</condition>
+			</item>
+			<item class_id_reference="30" object_id="_159">
 				<inState>3</inState>
 				<outState>4</outState>
 				<condition>
@@ -2053,24 +2578,9 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_126">
-				<inState>4</inState>
-				<outState>5</outState>
-				<condition>
-					<id>-1</id>
-					<sop>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>
-							<count>0</count>
-							<item_version>0</item_version>
-						</item>
-					</sop>
-				</condition>
-			</item>
-			<item class_id_reference="30" object_id="_127">
+			<item class_id_reference="30" object_id="_160">
 				<inState>5</inState>
-				<outState>2</outState>
+				<outState>6</outState>
 				<condition>
 					<id>-1</id>
 					<sop>
@@ -2083,9 +2593,24 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_128">
-				<inState>2</inState>
-				<outState>6</outState>
+			<item class_id_reference="30" object_id="_161">
+				<inState>6</inState>
+				<outState>4</outState>
+				<condition>
+					<id>-1</id>
+					<sop>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>
+							<count>0</count>
+							<item_version>0</item_version>
+						</item>
+					</sop>
+				</condition>
+			</item>
+			<item class_id_reference="30" object_id="_162">
+				<inState>4</inState>
+				<outState>7</outState>
 				<condition>
 					<id>-1</id>
 					<sop>
@@ -2096,7 +2621,7 @@
 							<item_version>0</item_version>
 							<item class_id="34" tracking_level="0" version="0">
 								<first class_id="35" tracking_level="0" version="0">
-									<first>7</first>
+									<first>15</first>
 									<second>0</second>
 								</first>
 								<second>0</second>
@@ -2105,9 +2630,9 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_129">
-				<inState>2</inState>
-				<outState>3</outState>
+			<item class_id_reference="30" object_id="_163">
+				<inState>4</inState>
+				<outState>5</outState>
 				<condition>
 					<id>-1</id>
 					<sop>
@@ -2118,7 +2643,7 @@
 							<item_version>0</item_version>
 							<item>
 								<first>
-									<first>7</first>
+									<first>15</first>
 									<second>0</second>
 								</first>
 								<second>1</second>
@@ -2131,11 +2656,18 @@
 	</fsm>
 	<res class_id="-1"></res>
 	<node_label_latency class_id="37" tracking_level="0" version="0">
-		<count>23</count>
+		<count>29</count>
 		<item_version>0</item_version>
 		<item class_id="38" tracking_level="0" version="0">
-			<first>4</first>
+			<first>3</first>
 			<second class_id="39" tracking_level="0" version="0">
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>5</first>
+			<second>
 				<first>0</first>
 				<second>0</second>
 			</second>
@@ -2143,14 +2675,21 @@
 		<item>
 			<first>6</first>
 			<second>
-				<first>1</first>
-				<second>0</second>
+				<first>0</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>7</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>8</first>
+			<second>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2162,86 +2701,72 @@
 			</second>
 		</item>
 		<item>
-			<first>14</first>
+			<first>10</first>
+			<second>
+				<first>1</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>11</first>
 			<second>
 				<first>2</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>13</first>
+			<second>
+				<first>4</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>14</first>
+			<second>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>15</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>16</first>
-			<second>
-				<first>2</first>
-				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>17</first>
 			<second>
-				<first>1</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>18</first>
-			<second>
-				<first>1</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>19</first>
-			<second>
-				<first>1</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>20</first>
-			<second>
-				<first>1</first>
-				<second>1</second>
-			</second>
-		</item>
-		<item>
-			<first>21</first>
-			<second>
-				<first>1</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>22</first>
 			<second>
-				<first>1</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>23</first>
 			<second>
-				<first>1</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>24</first>
 			<second>
-				<first>1</first>
-				<second>1</second>
+				<first>4</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>25</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2255,36 +2780,50 @@
 		<item>
 			<first>27</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>28</first>
 			<second>
-				<first>4</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>29</first>
 			<second>
-				<first>4</first>
-				<second>0</second>
+				<first>3</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>4</first>
+				<first>3</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>31</first>
+			<second>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>4</first>
+				<first>3</first>
 				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>33</first>
+			<second>
+				<first>3</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
@@ -2294,49 +2833,77 @@
 				<second>0</second>
 			</second>
 		</item>
+		<item>
+			<first>35</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>37</first>
+			<second>
+				<first>4</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>38</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>40</first>
+			<second>
+				<first>6</first>
+				<second>0</second>
+			</second>
+		</item>
 	</node_label_latency>
 	<bblk_ent_exit class_id="40" tracking_level="0" version="0">
 		<count>4</count>
 		<item_version>0</item_version>
 		<item class_id="41" tracking_level="0" version="0">
-			<first>5</first>
+			<first>12</first>
 			<second class_id="42" tracking_level="0" version="0">
 				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>10</first>
-			<second>
-				<first>1</first>
-				<second>1</second>
-			</second>
-		</item>
-		<item>
-			<first>33</first>
-			<second>
-				<first>1</first>
-				<second>4</second>
-			</second>
-		</item>
-		<item>
-			<first>35</first>
-			<second>
-				<first>2</first>
 				<second>2</second>
+			</second>
+		</item>
+		<item>
+			<first>18</first>
+			<second>
+				<first>3</first>
+				<second>3</second>
+			</second>
+		</item>
+		<item>
+			<first>39</first>
+			<second>
+				<first>3</first>
+				<second>5</second>
+			</second>
+		</item>
+		<item>
+			<first>41</first>
+			<second>
+				<first>4</first>
+				<second>4</second>
 			</second>
 		</item>
 	</bblk_ent_exit>
 	<regions class_id="43" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="44" tracking_level="1" version="0" object_id="_130">
+		<item class_id="44" tracking_level="1" version="0" object_id="_164">
 			<region_name>loop</region_name>
 			<basic_blocks>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>10</item>
-				<item>33</item>
+				<item>18</item>
+				<item>39</item>
 			</basic_blocks>
 			<nodes>
 				<count>0</count>
@@ -2345,48 +2912,44 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>2</interval>
-			<pipe_depth>4</pipe_depth>
+			<pipe_depth>3</pipe_depth>
 		</item>
 	</regions>
 	<dp_fu_nodes class_id="45" tracking_level="0" version="0">
-		<count>16</count>
+		<count>20</count>
 		<item_version>0</item_version>
 		<item class_id="46" tracking_level="0" version="0">
-			<first>40</first>
+			<first>46</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>19</item>
+				<item>3</item>
 			</second>
 		</item>
 		<item>
-			<first>47</first>
-			<second>
-				<count>7</count>
-				<item_version>0</item_version>
-				<item>20</item>
-				<item>20</item>
-				<item>24</item>
-				<item>24</item>
-				<item>16</item>
-				<item>16</item>
-				<item>30</item>
-			</second>
-		</item>
-		<item>
-			<first>53</first>
+			<first>54</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>23</item>
+				<item>5</item>
 			</second>
 		</item>
 		<item>
-			<first>65</first>
+			<first>62</first>
 			<second>
-				<count>1</count>
+				<count>11</count>
 				<item_version>0</item_version>
-				<item>15</item>
+				<item>6</item>
+				<item>6</item>
+				<item>7</item>
+				<item>7</item>
+				<item>10</item>
+				<item>10</item>
+				<item>29</item>
+				<item>29</item>
+				<item>33</item>
+				<item>33</item>
+				<item>25</item>
 			</second>
 		</item>
 		<item>
@@ -2394,79 +2957,47 @@
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>29</item>
+				<item>9</item>
 			</second>
 		</item>
 		<item>
-			<first>85</first>
+			<first>82</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>6</item>
+				<item>28</item>
 			</second>
 		</item>
 		<item>
-			<first>93</first>
+			<first>90</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>7</item>
+				<item>32</item>
 			</second>
 		</item>
 		<item>
-			<first>99</first>
+			<first>98</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>17</item>
+				<item>24</item>
 			</second>
 		</item>
 		<item>
-			<first>105</first>
+			<first>109</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>18</item>
+				<item>13</item>
 			</second>
 		</item>
 		<item>
-			<first>110</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>21</item>
-			</second>
-		</item>
-		<item>
-			<first>116</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>22</item>
-			</second>
-		</item>
-		<item>
-			<first>121</first>
+			<first>120</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>14</item>
-			</second>
-		</item>
-		<item>
-			<first>126</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>27</item>
-			</second>
-		</item>
-		<item>
-			<first>132</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>25</item>
 			</second>
 		</item>
 		<item>
@@ -2474,7 +3005,7 @@
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>26</item>
+				<item>8</item>
 			</second>
 		</item>
 		<item>
@@ -2482,23 +3013,11 @@
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>28</item>
-			</second>
-		</item>
-	</dp_fu_nodes>
-	<dp_fu_nodes_expression class_id="48" tracking_level="0" version="0">
-		<count>15</count>
-		<item_version>0</item_version>
-		<item class_id="49" tracking_level="0" version="0">
-			<first>add_ln8_1_fu_110</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>21</item>
+				<item>15</item>
 			</second>
 		</item>
 		<item>
-			<first>add_ln8_2_fu_136</first>
+			<first>148</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2506,55 +3025,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln8_fu_99</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>17</item>
-			</second>
-		</item>
-		<item>
-			<first>array_addr_1_gep_fu_40</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>19</item>
-			</second>
-		</item>
-		<item>
-			<first>array_addr_2_gep_fu_53</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>23</item>
-			</second>
-		</item>
-		<item>
-			<first>array_addr_3_gep_fu_73</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>29</item>
-			</second>
-		</item>
-		<item>
-			<first>array_addr_gep_fu_65</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>15</item>
-			</second>
-		</item>
-		<item>
-			<first>i_0_phi_fu_85</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>6</item>
-			</second>
-		</item>
-		<item>
-			<first>i_fu_126</first>
+			<first>154</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2562,31 +3033,23 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln6_fu_93</first>
+			<first>159</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>7</item>
+				<item>30</item>
 			</second>
 		</item>
 		<item>
-			<first>mul_ln8_fu_132</first>
+			<first>165</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>25</item>
+				<item>31</item>
 			</second>
 		</item>
 		<item>
-			<first>zext_ln8_1_fu_105</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>18</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln8_2_fu_116</first>
+			<first>170</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2594,7 +3057,115 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln8_3_fu_142</first>
+			<first>177</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>23</item>
+			</second>
+		</item>
+		<item>
+			<first>182</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>37</item>
+			</second>
+		</item>
+		<item>
+			<first>188</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>34</item>
+			</second>
+		</item>
+		<item>
+			<first>193</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>35</item>
+			</second>
+		</item>
+	</dp_fu_nodes>
+	<dp_fu_nodes_expression class_id="48" tracking_level="0" version="0">
+		<count>19</count>
+		<item_version>0</item_version>
+		<item class_id="49" tracking_level="0" version="0">
+			<first>accum_0_phi_fu_109</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>13</item>
+			</second>
+		</item>
+		<item>
+			<first>accum_1_fu_193</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>35</item>
+			</second>
+		</item>
+		<item>
+			<first>accum_fu_136</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>8</item>
+			</second>
+		</item>
+		<item>
+			<first>add_ln11_fu_170</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>22</item>
+			</second>
+		</item>
+		<item>
+			<first>add_ln12_1_fu_159</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>30</item>
+			</second>
+		</item>
+		<item>
+			<first>add_ln12_fu_148</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>26</item>
+			</second>
+		</item>
+		<item>
+			<first>array_addr_1_gep_fu_54</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>5</item>
+			</second>
+		</item>
+		<item>
+			<first>array_addr_2_gep_fu_73</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>9</item>
+			</second>
+		</item>
+		<item>
+			<first>array_addr_3_gep_fu_98</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>24</item>
+			</second>
+		</item>
+		<item>
+			<first>array_addr_4_gep_fu_82</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2602,11 +3173,75 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln8_fu_121</first>
+			<first>array_addr_5_gep_fu_90</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>32</item>
+			</second>
+		</item>
+		<item>
+			<first>array_addr_gep_fu_46</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>3</item>
+			</second>
+		</item>
+		<item>
+			<first>i_0_phi_fu_120</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>14</item>
+			</second>
+		</item>
+		<item>
+			<first>i_fu_182</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>37</item>
+			</second>
+		</item>
+		<item>
+			<first>icmp_ln9_fu_142</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>15</item>
+			</second>
+		</item>
+		<item>
+			<first>mul_ln12_fu_188</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>34</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln11_fu_177</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>23</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln12_1_fu_165</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>31</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln12_fu_154</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>27</item>
 			</second>
 		</item>
 	</dp_fu_nodes_expression>
@@ -2631,12 +3266,14 @@
 				<second>0</second>
 			</first>
 			<second>
-				<count>4</count>
+				<count>6</count>
 				<item_version>0</item_version>
-				<item>20</item>
-				<item>20</item>
-				<item>16</item>
-				<item>16</item>
+				<item>6</item>
+				<item>6</item>
+				<item>10</item>
+				<item>10</item>
+				<item>33</item>
+				<item>33</item>
 			</second>
 		</item>
 		<item>
@@ -2645,51 +3282,87 @@
 				<second>1</second>
 			</first>
 			<second>
-				<count>3</count>
+				<count>5</count>
 				<item_version>0</item_version>
-				<item>24</item>
-				<item>24</item>
-				<item>30</item>
+				<item>7</item>
+				<item>7</item>
+				<item>29</item>
+				<item>29</item>
+				<item>25</item>
 			</second>
 		</item>
 	</dp_mem_port_nodes>
 	<dp_reg_nodes>
-		<count>9</count>
+		<count>14</count>
 		<item_version>0</item_version>
 		<item>
-			<first>81</first>
+			<first>106</first>
 			<second>
 				<count>1</count>
+				<item_version>0</item_version>
+				<item>13</item>
+			</second>
+		</item>
+		<item>
+			<first>116</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>14</item>
+			</second>
+		</item>
+		<item>
+			<first>128</first>
+			<second>
+				<count>2</count>
 				<item_version>0</item_version>
 				<item>6</item>
+				<item>10</item>
 			</second>
 		</item>
 		<item>
-			<first>146</first>
+			<first>132</first>
 			<second>
-				<count>1</count>
+				<count>2</count>
 				<item_version>0</item_version>
 				<item>7</item>
+				<item>29</item>
 			</second>
 		</item>
 		<item>
-			<first>150</first>
+			<first>199</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>19</item>
+				<item>3</item>
 			</second>
 		</item>
 		<item>
-			<first>155</first>
+			<first>204</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>23</item>
+				<item>5</item>
 			</second>
 		</item>
 		<item>
-			<first>160</first>
+			<first>209</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>9</item>
+			</second>
+		</item>
+		<item>
+			<first>214</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>8</item>
+			</second>
+		</item>
+		<item>
+			<first>219</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2697,67 +3370,139 @@
 			</second>
 		</item>
 		<item>
-			<first>165</first>
+			<first>223</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>20</item>
+				<item>28</item>
 			</second>
 		</item>
 		<item>
-			<first>170</first>
+			<first>228</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>24</item>
+				<item>32</item>
 			</second>
 		</item>
 		<item>
-			<first>175</first>
+			<first>233</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>27</item>
+				<item>33</item>
 			</second>
 		</item>
 		<item>
-			<first>181</first>
+			<first>238</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>26</item>
+				<item>37</item>
+			</second>
+		</item>
+		<item>
+			<first>243</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>35</item>
 			</second>
 		</item>
 	</dp_reg_nodes>
 	<dp_regname_nodes>
-		<count>9</count>
+		<count>14</count>
 		<item_version>0</item_version>
 		<item>
-			<first>add_ln8_2_reg_181</first>
+			<first>accum_0_reg_106</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>26</item>
+				<item>13</item>
 			</second>
 		</item>
 		<item>
-			<first>array_addr_1_reg_150</first>
+			<first>accum_1_reg_243</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>19</item>
+				<item>35</item>
 			</second>
 		</item>
 		<item>
-			<first>array_addr_2_reg_155</first>
+			<first>accum_reg_214</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>23</item>
+				<item>8</item>
 			</second>
 		</item>
 		<item>
-			<first>array_addr_reg_160</first>
+			<first>array_addr_1_reg_204</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>5</item>
+			</second>
+		</item>
+		<item>
+			<first>array_addr_2_reg_209</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>9</item>
+			</second>
+		</item>
+		<item>
+			<first>array_addr_4_reg_223</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>28</item>
+			</second>
+		</item>
+		<item>
+			<first>array_addr_5_reg_228</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>32</item>
+			</second>
+		</item>
+		<item>
+			<first>array_addr_reg_199</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>3</item>
+			</second>
+		</item>
+		<item>
+			<first>array_load_4_reg_233</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>33</item>
+			</second>
+		</item>
+		<item>
+			<first>i_0_reg_116</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>14</item>
+			</second>
+		</item>
+		<item>
+			<first>i_reg_238</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>37</item>
+			</second>
+		</item>
+		<item>
+			<first>icmp_ln9_reg_219</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2765,67 +3510,61 @@
 			</second>
 		</item>
 		<item>
-			<first>array_load_1_reg_165</first>
+			<first>reg_128</first>
 			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>20</item>
-			</second>
-		</item>
-		<item>
-			<first>array_load_2_reg_170</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>24</item>
-			</second>
-		</item>
-		<item>
-			<first>i_0_reg_81</first>
-			<second>
-				<count>1</count>
+				<count>2</count>
 				<item_version>0</item_version>
 				<item>6</item>
+				<item>10</item>
 			</second>
 		</item>
 		<item>
-			<first>i_reg_175</first>
+			<first>reg_132</first>
 			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>27</item>
-			</second>
-		</item>
-		<item>
-			<first>icmp_ln6_reg_146</first>
-			<second>
-				<count>1</count>
+				<count>2</count>
 				<item_version>0</item_version>
 				<item>7</item>
+				<item>29</item>
 			</second>
 		</item>
 	</dp_regname_nodes>
 	<dp_reg_phi>
-		<count>1</count>
+		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>81</first>
+			<first>106</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>6</item>
+				<item>13</item>
+			</second>
+		</item>
+		<item>
+			<first>116</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>14</item>
 			</second>
 		</item>
 	</dp_reg_phi>
 	<dp_regname_phi>
-		<count>1</count>
+		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_0_reg_81</first>
+			<first>accum_0_reg_106</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>6</item>
+				<item>13</item>
+			</second>
+		</item>
+		<item>
+			<first>i_0_reg_116</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>14</item>
 			</second>
 		</item>
 	</dp_regname_phi>
@@ -2840,12 +3579,14 @@
 				<item>
 					<first>load</first>
 					<second>
-						<count>4</count>
+						<count>6</count>
 						<item_version>0</item_version>
-						<item>20</item>
-						<item>20</item>
-						<item>16</item>
-						<item>16</item>
+						<item>6</item>
+						<item>6</item>
+						<item>10</item>
+						<item>10</item>
+						<item>33</item>
+						<item>33</item>
 					</second>
 				</item>
 			</second>
@@ -2858,10 +3599,12 @@
 				<item>
 					<first>load</first>
 					<second>
-						<count>2</count>
+						<count>4</count>
 						<item_version>0</item_version>
-						<item>24</item>
-						<item>24</item>
+						<item>7</item>
+						<item>7</item>
+						<item>29</item>
+						<item>29</item>
 					</second>
 				</item>
 				<item>
@@ -2869,7 +3612,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>30</item>
+						<item>25</item>
 					</second>
 				</item>
 			</second>

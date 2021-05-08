@@ -163,14 +163,22 @@ void kernel2( int array[1024] );
 void kernel2( int array[1024] )
 {_ssdm_SpecArrayDimSize(array, 1024);
     int i;
-    loop:for(i=2; i<1024 -1; i++)
+    int accum = array[1]*array[0];
+    int elem2 = array[2];
+
+    loop:for(i=3; i<1024; i++)
     {
+#pragma HLS DEPENDENCE variable=&accum inter false
+# 10 "kernel2.cpp"
+
 #pragma HLS DEPENDENCE variable=&array inter false
-# 7 "kernel2.cpp"
+# 10 "kernel2.cpp"
 
 #pragma HLS PIPELINE
-# 7 "kernel2.cpp"
+# 10 "kernel2.cpp"
 
-        array[i+1] = array[i] + array[i-1] * array[i-2];
+     array[i] = elem2 + accum;
+     accum = accum + array[i-1]*array[i-2];
+
     }
 }
