@@ -1,3 +1,0 @@
-kernel7_faddfsub_bkb
-kernel7_fcmp_32nscud
-kernel7

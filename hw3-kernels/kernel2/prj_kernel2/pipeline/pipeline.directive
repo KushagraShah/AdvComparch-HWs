@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
-  <sourceFile>
-    <directive functionName="kernel2" label="loop" functionLabel="">
-      <pragma name="PIPELINE"/>
-    </directive>
-  </sourceFile>
-</AutoPilot:ProjectResources>
