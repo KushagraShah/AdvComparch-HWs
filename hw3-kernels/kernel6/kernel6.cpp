@@ -3,7 +3,12 @@
 int kernel6(int x)
 {
     int i=0;
-    loop:while(i*i < x)
-        i++;
+//    loop:while(i*i < x)
+//        i++;
+    loop:for(i=0; ;i++)
+    {
+    	if(i*i >= x)
+    		break;
+    }
     return i;
 }
