@@ -163,12 +163,14 @@ void kernel2( int array[1024] );
 void kernel2( int array[1024] )
 {_ssdm_SpecArrayDimSize(array, 1024);
     int i;
-    loop:for(i=3; i<1024; i++)
+    loop:for(i=2; i<1024 -1; i++)
+    {
 _ssdm_SpecDependence( array, 0, 0, -1, 0, 1);
-# 6 "kernel2.cpp"
+# 7 "kernel2.cpp"
 
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
-# 6 "kernel2.cpp"
+# 7 "kernel2.cpp"
 
-        array[i] = array[i-1] + array[i-2] * array[i-3];
+        array[i+1] = array[i] + array[i-1] * array[i-2];
+    }
 }

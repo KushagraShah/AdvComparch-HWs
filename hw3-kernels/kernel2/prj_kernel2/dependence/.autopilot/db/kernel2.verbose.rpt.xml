@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'kernel2'" level="0">
-<item name = "Date">Sat May  8 02:03:22 2021
+<item name = "Date">Sat May  8 03:46:33 2021
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">prj_kernel2</item>
@@ -48,12 +48,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, 3, 0, 181, -</column>
+<column name="Expression">-, 3, 0, 160, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 84, -</column>
-<column name="Register">-, -, 137, -, -</column>
+<column name="Register">-, -, 124, -, -</column>
 <specialColumn name="Available">650, 600, 202800, 101400, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
 </table>
@@ -78,17 +78,16 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="mul_ln7_fu_142_p2">*, 3, 0, 21, 32, 32</column>
-<column name="add_ln7_1_fu_103_p2">+, 0, 0, 18, 11, 3</column>
-<column name="add_ln7_2_fu_114_p2">+, 0, 0, 18, 11, 3</column>
-<column name="add_ln7_3_fu_146_p2">+, 0, 0, 39, 32, 32</column>
-<column name="add_ln7_fu_125_p2">+, 0, 0, 18, 11, 2</column>
-<column name="i_fu_136_p2">+, 0, 0, 18, 11, 1</column>
+<column name="mul_ln8_fu_132_p2">*, 3, 0, 21, 32, 32</column>
+<column name="add_ln8_1_fu_110_p2">+, 0, 0, 17, 10, 3</column>
+<column name="add_ln8_2_fu_136_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln8_fu_99_p2">+, 0, 0, 17, 10, 2</column>
+<column name="i_fu_126_p2">+, 0, 0, 17, 10, 1</column>
 <column name="ap_enable_state2_pp0_iter0_stage0">and, 0, 0, 6, 1, 1</column>
 <column name="ap_enable_state3_pp0_iter0_stage1">and, 0, 0, 6, 1, 1</column>
 <column name="ap_enable_state4_pp0_iter1_stage0">and, 0, 0, 6, 1, 1</column>
 <column name="ap_enable_state5_pp0_iter1_stage1">and, 0, 0, 6, 1, 1</column>
-<column name="icmp_ln6_fu_97_p2">icmp, 0, 0, 13, 11, 12</column>
+<column name="icmp_ln6_fu_93_p2">icmp, 0, 0, 13, 10, 2</column>
 <column name="ap_block_pp0">or, 0, 0, 6, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 6, 1, 2</column>
 </table>
@@ -97,25 +96,24 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">27, 5, 1, 5</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_phi_mux_i_0_phi_fu_89_p4">9, 2, 11, 22</column>
+<column name="ap_phi_mux_i_0_phi_fu_85_p4">9, 2, 10, 20</column>
 <column name="array_r_address0">15, 3, 10, 30</column>
 <column name="array_r_address1">15, 3, 10, 30</column>
-<column name="i_0_reg_85">9, 2, 11, 22</column>
+<column name="i_0_reg_81">9, 2, 10, 20</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln7_3_reg_191">32, 0, 32, 0</column>
+<column name="add_ln8_2_reg_181">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="array_load_1_reg_176">32, 0, 32, 0</column>
-<column name="array_load_2_reg_181">32, 0, 32, 0</column>
-<column name="i_0_reg_85">11, 0, 11, 0</column>
-<column name="i_0_reg_85_pp0_iter1_reg">11, 0, 11, 0</column>
-<column name="i_reg_186">11, 0, 11, 0</column>
-<column name="icmp_ln6_reg_157">1, 0, 1, 0</column>
-<column name="icmp_ln6_reg_157_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="array_load_1_reg_165">32, 0, 32, 0</column>
+<column name="array_load_2_reg_170">32, 0, 32, 0</column>
+<column name="i_0_reg_81">10, 0, 10, 0</column>
+<column name="i_reg_175">10, 0, 10, 0</column>
+<column name="icmp_ln6_reg_146">1, 0, 1, 0</column>
+<column name="icmp_ln6_reg_146_pp0_iter1_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
