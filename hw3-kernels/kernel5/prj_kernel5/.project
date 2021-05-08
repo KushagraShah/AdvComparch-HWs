@@ -52,9 +52,9 @@
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/kernel5.cpp</location>
 		</link>
 		<link>
-			<name>test/constraints</name>
+			<name>split/constraints</name>
 			<type>2</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/test/.tcls</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/split/.tcls</location>
 		</link>
 		<link>
 			<name>testbench/kernel5_test.cpp</name>
@@ -92,19 +92,19 @@
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/pipeline/script.tcl</location>
 		</link>
 		<link>
-			<name>test/constraints/.xml.directive</name>
+			<name>split/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/test/test.directive</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/split/split.directive</location>
 		</link>
 		<link>
-			<name>test/constraints/directives.tcl</name>
+			<name>split/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/test/directives.tcl</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/split/directives.tcl</location>
 		</link>
 		<link>
-			<name>test/constraints/script.tcl</name>
+			<name>split/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/test/script.tcl</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/split/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

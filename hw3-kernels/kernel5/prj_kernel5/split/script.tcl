@@ -7,10 +7,10 @@ open_project prj_kernel5
 set_top kernel5
 add_files kernel5.cpp
 add_files -tb kernel5_test.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
-open_solution "original"
+open_solution "split"
 set_part {xc7k160t-fbg484-1}
 create_clock -period 10 -name default
-source "./prj_kernel5/original/directives.tcl"
+source "./prj_kernel5/split/directives.tcl"
 csim_design
 csynth_design
 cosim_design
