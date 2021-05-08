@@ -268,10 +268,10 @@
 
 <Node id="19" bw="64" op_0_bw="11">
 <![CDATA[
-loop:3  %zext_ln8 = zext i11 %i_0 to i64
+loop:3  %zext_ln10 = zext i11 %i_0 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln8"/></StgValue>
+<StgValue><ssdm name="zext_ln10"/></StgValue>
 </operation>
 
 <operation id="26" st_id="2" stage="1" lat="1">
@@ -284,7 +284,7 @@ loop:3  %zext_ln8 = zext i11 %i_0 to i64
 
 <Node id="20" bw="10" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-loop:4  %a_addr = getelementptr [1024 x float]* %a, i64 0, i64 %zext_ln8
+loop:4  %a_addr = getelementptr [1024 x float]* %a, i64 0, i64 %zext_ln10
 
 ]]></Node>
 <StgValue><ssdm name="a_addr"/></StgValue>
@@ -316,7 +316,7 @@ loop:5  %a_load = load float* %a_addr, align 4
 
 <Node id="22" bw="10" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-loop:6  %b_addr = getelementptr [1024 x float]* %b, i64 0, i64 %zext_ln8
+loop:6  %b_addr = getelementptr [1024 x float]* %b, i64 0, i64 %zext_ln10
 
 ]]></Node>
 <StgValue><ssdm name="b_addr"/></StgValue>
@@ -386,10 +386,10 @@ loop:7  %b_load = load float* %b_addr, align 4
 
 <Node id="24" bw="32" op_0_bw="32">
 <![CDATA[
-loop:8  %bitcast_ln8 = bitcast float %a_load to i32
+loop:8  %bitcast_ln10 = bitcast float %a_load to i32
 
 ]]></Node>
-<StgValue><ssdm name="bitcast_ln8"/></StgValue>
+<StgValue><ssdm name="bitcast_ln10"/></StgValue>
 </operation>
 
 <operation id="33" st_id="4" stage="1" lat="1">
@@ -402,7 +402,7 @@ loop:8  %bitcast_ln8 = bitcast float %a_load to i32
 
 <Node id="25" bw="8" op_0_bw="8" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-loop:9  %tmp = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln8, i32 23, i32 30)
+loop:9  %tmp = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln10, i32 23, i32 30)
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -418,10 +418,10 @@ loop:9  %tmp = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln8, i32
 
 <Node id="26" bw="23" op_0_bw="32">
 <![CDATA[
-loop:10  %trunc_ln8 = trunc i32 %bitcast_ln8 to i23
+loop:10  %trunc_ln10 = trunc i32 %bitcast_ln10 to i23
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln8"/></StgValue>
+<StgValue><ssdm name="trunc_ln10"/></StgValue>
 </operation>
 
 <operation id="35" st_id="4" stage="1" lat="1">
@@ -434,10 +434,10 @@ loop:10  %trunc_ln8 = trunc i32 %bitcast_ln8 to i23
 
 <Node id="27" bw="32" op_0_bw="32">
 <![CDATA[
-loop:11  %bitcast_ln8_1 = bitcast float %b_load to i32
+loop:11  %bitcast_ln10_1 = bitcast float %b_load to i32
 
 ]]></Node>
-<StgValue><ssdm name="bitcast_ln8_1"/></StgValue>
+<StgValue><ssdm name="bitcast_ln10_1"/></StgValue>
 </operation>
 
 <operation id="36" st_id="4" stage="1" lat="1">
@@ -450,7 +450,7 @@ loop:11  %bitcast_ln8_1 = bitcast float %b_load to i32
 
 <Node id="28" bw="8" op_0_bw="8" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-loop:12  %tmp_3 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln8_1, i32 23, i32 30)
+loop:12  %tmp_3 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln10_1, i32 23, i32 30)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_3"/></StgValue>
@@ -466,10 +466,10 @@ loop:12  %tmp_3 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln8_1
 
 <Node id="29" bw="23" op_0_bw="32">
 <![CDATA[
-loop:13  %trunc_ln8_1 = trunc i32 %bitcast_ln8_1 to i23
+loop:13  %trunc_ln10_1 = trunc i32 %bitcast_ln10_1 to i23
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln8_1"/></StgValue>
+<StgValue><ssdm name="trunc_ln10_1"/></StgValue>
 </operation>
 
 <operation id="38" st_id="4" stage="1" lat="1">
@@ -482,10 +482,10 @@ loop:13  %trunc_ln8_1 = trunc i32 %bitcast_ln8_1 to i23
 
 <Node id="30" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-loop:14  %icmp_ln8 = icmp ne i8 %tmp, -1
+loop:14  %icmp_ln10 = icmp ne i8 %tmp, -1
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln8"/></StgValue>
+<StgValue><ssdm name="icmp_ln10"/></StgValue>
 </operation>
 
 <operation id="39" st_id="4" stage="1" lat="1">
@@ -498,10 +498,10 @@ loop:14  %icmp_ln8 = icmp ne i8 %tmp, -1
 
 <Node id="31" bw="1" op_0_bw="23" op_1_bw="23">
 <![CDATA[
-loop:15  %icmp_ln8_1 = icmp eq i23 %trunc_ln8, 0
+loop:15  %icmp_ln10_1 = icmp eq i23 %trunc_ln10, 0
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln8_1"/></StgValue>
+<StgValue><ssdm name="icmp_ln10_1"/></StgValue>
 </operation>
 
 <operation id="40" st_id="4" stage="1" lat="1">
@@ -514,10 +514,10 @@ loop:15  %icmp_ln8_1 = icmp eq i23 %trunc_ln8, 0
 
 <Node id="33" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-loop:17  %icmp_ln8_2 = icmp ne i8 %tmp_3, -1
+loop:17  %icmp_ln10_2 = icmp ne i8 %tmp_3, -1
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln8_2"/></StgValue>
+<StgValue><ssdm name="icmp_ln10_2"/></StgValue>
 </operation>
 
 <operation id="41" st_id="4" stage="1" lat="1">
@@ -530,10 +530,10 @@ loop:17  %icmp_ln8_2 = icmp ne i8 %tmp_3, -1
 
 <Node id="34" bw="1" op_0_bw="23" op_1_bw="23">
 <![CDATA[
-loop:18  %icmp_ln8_3 = icmp eq i23 %trunc_ln8_1, 0
+loop:18  %icmp_ln10_3 = icmp eq i23 %trunc_ln10_1, 0
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln8_3"/></StgValue>
+<StgValue><ssdm name="icmp_ln10_3"/></StgValue>
 </operation>
 
 <operation id="42" st_id="4" stage="2" lat="2">
@@ -654,10 +654,10 @@ loop:23  %tmp_1 = fsub float %a_load, %b_load
 
 <Node id="32" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-loop:16  %or_ln8 = or i1 %icmp_ln8_1, %icmp_ln8
+loop:16  %or_ln10 = or i1 %icmp_ln10_1, %icmp_ln10
 
 ]]></Node>
-<StgValue><ssdm name="or_ln8"/></StgValue>
+<StgValue><ssdm name="or_ln10"/></StgValue>
 </operation>
 
 <operation id="49" st_id="8" stage="1" lat="1">
@@ -670,10 +670,10 @@ loop:16  %or_ln8 = or i1 %icmp_ln8_1, %icmp_ln8
 
 <Node id="35" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-loop:19  %or_ln8_1 = or i1 %icmp_ln8_3, %icmp_ln8_2
+loop:19  %or_ln10_1 = or i1 %icmp_ln10_3, %icmp_ln10_2
 
 ]]></Node>
-<StgValue><ssdm name="or_ln8_1"/></StgValue>
+<StgValue><ssdm name="or_ln10_1"/></StgValue>
 </operation>
 
 <operation id="50" st_id="8" stage="1" lat="1">
@@ -686,10 +686,10 @@ loop:19  %or_ln8_1 = or i1 %icmp_ln8_3, %icmp_ln8_2
 
 <Node id="36" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-loop:20  %and_ln8 = and i1 %or_ln8, %or_ln8_1
+loop:20  %and_ln10 = and i1 %or_ln10, %or_ln10_1
 
 ]]></Node>
-<StgValue><ssdm name="and_ln8"/></StgValue>
+<StgValue><ssdm name="and_ln10"/></StgValue>
 </operation>
 
 <operation id="51" st_id="8" stage="1" lat="1">
@@ -702,10 +702,10 @@ loop:20  %and_ln8 = and i1 %or_ln8, %or_ln8_1
 
 <Node id="38" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-loop:22  %and_ln8_1 = and i1 %and_ln8, %tmp_4
+loop:22  %and_ln10_1 = and i1 %and_ln10, %tmp_4
 
 ]]></Node>
-<StgValue><ssdm name="and_ln8_1"/></StgValue>
+<StgValue><ssdm name="and_ln10_1"/></StgValue>
 </operation>
 </state>
 
@@ -716,7 +716,7 @@ loop:22  %and_ln8_1 = and i1 %and_ln8, %tmp_4
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln6" val="0"/>
-<literal name="and_ln8_1" val="1"/>
+<literal name="and_ln10_1" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -736,7 +736,7 @@ loop:24  %sum = fadd float %sum_0, %tmp_1
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln6" val="0"/>
-<literal name="and_ln8_1" val="1"/>
+<literal name="and_ln10_1" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -756,7 +756,7 @@ loop:24  %sum = fadd float %sum_0, %tmp_1
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln6" val="0"/>
-<literal name="and_ln8_1" val="1"/>
+<literal name="and_ln10_1" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -824,7 +824,7 @@ loop:2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln6" val="0"/>
-<literal name="and_ln8_1" val="1"/>
+<literal name="and_ln10_1" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -846,7 +846,7 @@ loop:24  %sum = fadd float %sum_0, %tmp_1
 
 <Node id="41" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-loop:25  %sum_1 = select i1 %and_ln8_1, float %sum, float %sum_0
+loop:25  %sum_1 = select i1 %and_ln10_1, float %sum, float %sum_0
 
 ]]></Node>
 <StgValue><ssdm name="sum_1"/></StgValue>
@@ -899,7 +899,7 @@ loop:27  br label %1
 :0  ret float %sum_0
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln19"/></StgValue>
+<StgValue><ssdm name="ret_ln21"/></StgValue>
 </operation>
 </state>
 </state_list>

@@ -164,15 +164,17 @@ float kernel7(float a[1024], float b[1024])
 {_ssdm_SpecArrayDimSize(a, 1024);_ssdm_SpecArrayDimSize(b, 1024);
     float sum = 0;
     loop:for(int i=0; i<1024; i++)
-        {
+    {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 # 7 "kernel7.cpp"
 
-      if (a[i] > b[i])
-      {
-       sum = sum + (a[i] - b[i]);
-      }
-        }
+
+
+     if (a[i] > b[i])
+     {
+      sum = sum + (a[i] - b[i]);
+     }
+    }
 
 
 

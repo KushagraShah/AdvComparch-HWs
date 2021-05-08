@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'kernel7'" level="0">
-<item name = "Date">Sat May  8 02:57:25 2021
+<item name = "Date">Sat May  8 04:10:02 2021
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">prj_kernel7</item>
@@ -81,15 +81,15 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="i_fu_116_p2">+, 0, 0, 18, 11, 1</column>
-<column name="and_ln8_1_fu_200_p2">and, 0, 0, 6, 1, 1</column>
-<column name="and_ln8_fu_194_p2">and, 0, 0, 6, 1, 1</column>
+<column name="and_ln10_1_fu_200_p2">and, 0, 0, 6, 1, 1</column>
+<column name="and_ln10_fu_194_p2">and, 0, 0, 6, 1, 1</column>
+<column name="icmp_ln10_1_fu_168_p2">icmp, 0, 0, 18, 23, 1</column>
+<column name="icmp_ln10_2_fu_174_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln10_3_fu_180_p2">icmp, 0, 0, 18, 23, 1</column>
+<column name="icmp_ln10_fu_162_p2">icmp, 0, 0, 11, 8, 2</column>
 <column name="icmp_ln6_fu_110_p2">icmp, 0, 0, 13, 11, 12</column>
-<column name="icmp_ln8_1_fu_168_p2">icmp, 0, 0, 18, 23, 1</column>
-<column name="icmp_ln8_2_fu_174_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln8_3_fu_180_p2">icmp, 0, 0, 18, 23, 1</column>
-<column name="icmp_ln8_fu_162_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="or_ln8_1_fu_190_p2">or, 0, 0, 6, 1, 1</column>
-<column name="or_ln8_fu_186_p2">or, 0, 0, 6, 1, 1</column>
+<column name="or_ln10_1_fu_190_p2">or, 0, 0, 6, 1, 1</column>
+<column name="or_ln10_fu_186_p2">or, 0, 0, 6, 1, 1</column>
 <column name="sum_1_fu_205_p3">select, 0, 0, 32, 1, 32</column>
 <column name="ap_enable_pp0">xor, 0, 0, 6, 1, 2</column>
 </table>
@@ -109,7 +109,7 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="a_load_reg_231">32, 0, 32, 0</column>
-<column name="and_ln8_1_reg_275">1, 0, 1, 0</column>
+<column name="and_ln10_1_reg_275">1, 0, 1, 0</column>
 <column name="ap_CS_fsm">6, 0, 6, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -117,11 +117,11 @@
 <column name="b_load_reg_238">32, 0, 32, 0</column>
 <column name="i_0_reg_90">11, 0, 11, 0</column>
 <column name="i_reg_216">11, 0, 11, 0</column>
+<column name="icmp_ln10_1_reg_250">1, 0, 1, 0</column>
+<column name="icmp_ln10_2_reg_255">1, 0, 1, 0</column>
+<column name="icmp_ln10_3_reg_260">1, 0, 1, 0</column>
+<column name="icmp_ln10_reg_245">1, 0, 1, 0</column>
 <column name="icmp_ln6_reg_212">1, 0, 1, 0</column>
-<column name="icmp_ln8_1_reg_250">1, 0, 1, 0</column>
-<column name="icmp_ln8_2_reg_255">1, 0, 1, 0</column>
-<column name="icmp_ln8_3_reg_260">1, 0, 1, 0</column>
-<column name="icmp_ln8_reg_245">1, 0, 1, 0</column>
 <column name="sum_0_reg_78">32, 0, 32, 0</column>
 <column name="tmp_1_reg_270">32, 0, 32, 0</column>
 <column name="tmp_4_reg_265">1, 0, 1, 0</column>

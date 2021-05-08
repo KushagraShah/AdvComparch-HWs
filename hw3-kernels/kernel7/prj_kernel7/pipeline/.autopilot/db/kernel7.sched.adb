@@ -345,10 +345,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>zext_ln8</name>
+						<name>zext_ln10</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -363,7 +363,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -396,7 +396,7 @@
 						<name>a_addr</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -411,7 +411,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -446,7 +446,7 @@
 						<name>a_load</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -461,7 +461,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -494,7 +494,7 @@
 						<name>b_addr</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -509,7 +509,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -544,7 +544,7 @@
 						<name>b_load</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -559,7 +559,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -589,10 +589,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>bitcast_ln8</name>
+						<name>bitcast_ln10</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -607,7 +607,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -640,7 +640,7 @@
 						<name>tmp</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -655,7 +655,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -688,10 +688,10 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>trunc_ln8</name>
+						<name>trunc_ln10</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -706,7 +706,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -736,10 +736,10 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>bitcast_ln8_1</name>
+						<name>bitcast_ln10_1</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -754,7 +754,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -787,7 +787,7 @@
 						<name>tmp_3</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -802,7 +802,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -835,10 +835,10 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>trunc_ln8_1</name>
+						<name>trunc_ln10_1</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -853,7 +853,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -883,10 +883,10 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>icmp_ln8</name>
+						<name>icmp_ln10</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -901,7 +901,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -932,10 +932,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>icmp_ln8_1</name>
+						<name>icmp_ln10_1</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -950,7 +950,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -981,10 +981,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>or_ln8</name>
+						<name>or_ln10</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -999,7 +999,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -1030,10 +1030,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>icmp_ln8_2</name>
+						<name>icmp_ln10_2</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1048,7 +1048,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -1079,10 +1079,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>icmp_ln8_3</name>
+						<name>icmp_ln10_3</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1097,7 +1097,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -1128,10 +1128,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>or_ln8_1</name>
+						<name>or_ln10_1</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1146,7 +1146,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -1177,10 +1177,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>and_ln8</name>
+						<name>and_ln10</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1195,7 +1195,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -1229,7 +1229,7 @@
 						<name>tmp_4</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1244,7 +1244,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -1275,10 +1275,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>and_ln8_1</name>
+						<name>and_ln10_1</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1293,7 +1293,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -1327,7 +1327,7 @@
 						<name>tmp_1</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>10</lineNumber>
+						<lineNumber>12</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1342,7 +1342,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>10</second>
+										<second>12</second>
 									</item>
 								</second>
 							</item>
@@ -1376,7 +1376,7 @@
 						<name>sum</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>10</lineNumber>
+						<lineNumber>12</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1391,7 +1391,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>10</second>
+										<second>12</second>
 									</item>
 								</second>
 							</item>
@@ -1425,7 +1425,7 @@
 						<name>sum_1</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1440,7 +1440,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>8</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -1521,10 +1521,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>_ln19</name>
+						<name>_ln21</name>
 						<fileName>kernel7.cpp</fileName>
 						<fileDirectory>C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel7</fileDirectory>
-						<lineNumber>19</lineNumber>
+						<lineNumber>21</lineNumber>
 						<contextFuncName>kernel7</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1539,7 +1539,7 @@
 											<first>kernel7.cpp</first>
 											<second>kernel7</second>
 										</first>
-										<second>19</second>
+										<second>21</second>
 									</item>
 								</second>
 							</item>

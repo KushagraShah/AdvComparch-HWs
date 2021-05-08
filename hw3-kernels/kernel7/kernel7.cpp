@@ -4,12 +4,14 @@ float kernel7(float a[ARRAY_SIZE], float b[ARRAY_SIZE])
 {
     float sum = 0;
     loop:for(int i=0; i<ARRAY_SIZE; i++)
-        {
-    		if (a[i] > b[i])
-    		{
-    			sum = sum + (a[i] - b[i]);
-    		}
-        }
+    {
+//    	bool pred = (a[i] > b[i]);
+//    	sum = sum + (a[i] - b[i]) * pred;
+    	if (a[i] > b[i])
+    	{
+    		sum = sum + (a[i] - b[i]);
+    	}
+    }
 //    loop:for(int i=0; i<ARRAY_SIZE; i++)
 //    {
 //        float diff = a[i] - b[i];

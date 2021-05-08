@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'kernel7'
 ================================================================
-* Date:           Sat May  8 02:57:25 2021
+* Date:           Sat May  8 04:10:02 2021
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        prj_kernel7
@@ -89,24 +89,24 @@
     N/A
 
     * Expression: 
-    +----------------------+----------+-------+---+----+------------+------------+
-    |     Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
-    +----------------------+----------+-------+---+----+------------+------------+
-    |i_fu_116_p2           |     +    |      0|  0|  18|          11|           1|
-    |and_ln8_1_fu_200_p2   |    and   |      0|  0|   6|           1|           1|
-    |and_ln8_fu_194_p2     |    and   |      0|  0|   6|           1|           1|
-    |icmp_ln6_fu_110_p2    |   icmp   |      0|  0|  13|          11|          12|
-    |icmp_ln8_1_fu_168_p2  |   icmp   |      0|  0|  18|          23|           1|
-    |icmp_ln8_2_fu_174_p2  |   icmp   |      0|  0|  11|           8|           2|
-    |icmp_ln8_3_fu_180_p2  |   icmp   |      0|  0|  18|          23|           1|
-    |icmp_ln8_fu_162_p2    |   icmp   |      0|  0|  11|           8|           2|
-    |or_ln8_1_fu_190_p2    |    or    |      0|  0|   6|           1|           1|
-    |or_ln8_fu_186_p2      |    or    |      0|  0|   6|           1|           1|
-    |sum_1_fu_205_p3       |  select  |      0|  0|  32|           1|          32|
-    |ap_enable_pp0         |    xor   |      0|  0|   6|           1|           2|
-    +----------------------+----------+-------+---+----+------------+------------+
-    |Total                 |          |      0|  0| 151|          90|          57|
-    +----------------------+----------+-------+---+----+------------+------------+
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |i_fu_116_p2            |     +    |      0|  0|  18|          11|           1|
+    |and_ln10_1_fu_200_p2   |    and   |      0|  0|   6|           1|           1|
+    |and_ln10_fu_194_p2     |    and   |      0|  0|   6|           1|           1|
+    |icmp_ln10_1_fu_168_p2  |   icmp   |      0|  0|  18|          23|           1|
+    |icmp_ln10_2_fu_174_p2  |   icmp   |      0|  0|  11|           8|           2|
+    |icmp_ln10_3_fu_180_p2  |   icmp   |      0|  0|  18|          23|           1|
+    |icmp_ln10_fu_162_p2    |   icmp   |      0|  0|  11|           8|           2|
+    |icmp_ln6_fu_110_p2     |   icmp   |      0|  0|  13|          11|          12|
+    |or_ln10_1_fu_190_p2    |    or    |      0|  0|   6|           1|           1|
+    |or_ln10_fu_186_p2      |    or    |      0|  0|   6|           1|           1|
+    |sum_1_fu_205_p3        |  select  |      0|  0|  32|           1|          32|
+    |ap_enable_pp0          |    xor   |      0|  0|   6|           1|           2|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |Total                  |          |      0|  0| 151|          90|          57|
+    +-----------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
     +-----------------------------+----+-----------+-----+-----------+
@@ -129,7 +129,7 @@
     |           Name          | FF | LUT| Bits| Const Bits|
     +-------------------------+----+----+-----+-----------+
     |a_load_reg_231           |  32|   0|   32|          0|
-    |and_ln8_1_reg_275        |   1|   0|    1|          0|
+    |and_ln10_1_reg_275       |   1|   0|    1|          0|
     |ap_CS_fsm                |   6|   0|    6|          0|
     |ap_enable_reg_pp0_iter0  |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
@@ -137,11 +137,11 @@
     |b_load_reg_238           |  32|   0|   32|          0|
     |i_0_reg_90               |  11|   0|   11|          0|
     |i_reg_216                |  11|   0|   11|          0|
+    |icmp_ln10_1_reg_250      |   1|   0|    1|          0|
+    |icmp_ln10_2_reg_255      |   1|   0|    1|          0|
+    |icmp_ln10_3_reg_260      |   1|   0|    1|          0|
+    |icmp_ln10_reg_245        |   1|   0|    1|          0|
     |icmp_ln6_reg_212         |   1|   0|    1|          0|
-    |icmp_ln8_1_reg_250       |   1|   0|    1|          0|
-    |icmp_ln8_2_reg_255       |   1|   0|    1|          0|
-    |icmp_ln8_3_reg_260       |   1|   0|    1|          0|
-    |icmp_ln8_reg_245         |   1|   0|    1|          0|
     |sum_0_reg_78             |  32|   0|   32|          0|
     |tmp_1_reg_270            |  32|   0|   32|          0|
     |tmp_4_reg_265            |   1|   0|    1|          0|
@@ -235,70 +235,70 @@ ST_1 : Operation 18 [1/1] (1.06ns)   --->   "br label %1" [kernel7.cpp:6]   --->
 State 2 <SV = 1> <Delay = 2.66>
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%sum_0 = phi float [ 0.000000e+00, %0 ], [ %sum_1, %loop ]"   --->   Operation 19 'phi' 'sum_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%i_0 = phi i11 [ 0, %0 ], [ %i, %loop ]"   --->   Operation 20 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (1.32ns)   --->   "%icmp_ln6 = icmp eq i11 %i_0, -1024" [kernel7.cpp:6]   --->   Operation 21 'icmp' 'icmp_ln6' <Predicate = true> <Delay = 1.32> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (1.32ns)   --->   "%icmp_ln6 = icmp eq i11 %i_0, -1024" [kernel7.cpp:6]   --->   Operation 21 'icmp' 'icmp_ln6' <Predicate = true> <Delay = 1.32> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1024, i64 1024, i64 1024) nounwind"   --->   Operation 22 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 23 [1/1] (1.42ns)   --->   "%i = add i11 %i_0, 1" [kernel7.cpp:6]   --->   Operation 23 'add' 'i' <Predicate = true> <Delay = 1.42> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 24 [1/1] (0.00ns)   --->   "br i1 %icmp_ln6, label %2, label %loop" [kernel7.cpp:6]   --->   Operation 24 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln8 = zext i11 %i_0 to i64" [kernel7.cpp:8]   --->   Operation 25 'zext' 'zext_ln8' <Predicate = (!icmp_ln6)> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%a_addr = getelementptr [1024 x float]* %a, i64 0, i64 %zext_ln8" [kernel7.cpp:8]   --->   Operation 26 'getelementptr' 'a_addr' <Predicate = (!icmp_ln6)> <Delay = 0.00>
-ST_2 : Operation 27 [2/2] (2.66ns)   --->   "%a_load = load float* %a_addr, align 4" [kernel7.cpp:8]   --->   Operation 27 'load' 'a_load' <Predicate = (!icmp_ln6)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
-ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%b_addr = getelementptr [1024 x float]* %b, i64 0, i64 %zext_ln8" [kernel7.cpp:8]   --->   Operation 28 'getelementptr' 'b_addr' <Predicate = (!icmp_ln6)> <Delay = 0.00>
-ST_2 : Operation 29 [2/2] (2.66ns)   --->   "%b_load = load float* %b_addr, align 4" [kernel7.cpp:8]   --->   Operation 29 'load' 'b_load' <Predicate = (!icmp_ln6)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln10 = zext i11 %i_0 to i64" [kernel7.cpp:10]   --->   Operation 25 'zext' 'zext_ln10' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%a_addr = getelementptr [1024 x float]* %a, i64 0, i64 %zext_ln10" [kernel7.cpp:10]   --->   Operation 26 'getelementptr' 'a_addr' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_2 : Operation 27 [2/2] (2.66ns)   --->   "%a_load = load float* %a_addr, align 4" [kernel7.cpp:10]   --->   Operation 27 'load' 'a_load' <Predicate = (!icmp_ln6)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%b_addr = getelementptr [1024 x float]* %b, i64 0, i64 %zext_ln10" [kernel7.cpp:10]   --->   Operation 28 'getelementptr' 'b_addr' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_2 : Operation 29 [2/2] (2.66ns)   --->   "%b_load = load float* %b_addr, align 4" [kernel7.cpp:10]   --->   Operation 29 'load' 'b_load' <Predicate = (!icmp_ln6)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
 
 State 3 <SV = 2> <Delay = 2.66>
-ST_3 : Operation 30 [1/2] (2.66ns)   --->   "%a_load = load float* %a_addr, align 4" [kernel7.cpp:8]   --->   Operation 30 'load' 'a_load' <Predicate = (!icmp_ln6)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
-ST_3 : Operation 31 [1/2] (2.66ns)   --->   "%b_load = load float* %b_addr, align 4" [kernel7.cpp:8]   --->   Operation 31 'load' 'b_load' <Predicate = (!icmp_ln6)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 30 [1/2] (2.66ns)   --->   "%a_load = load float* %a_addr, align 4" [kernel7.cpp:10]   --->   Operation 30 'load' 'a_load' <Predicate = (!icmp_ln6)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 31 [1/2] (2.66ns)   --->   "%b_load = load float* %b_addr, align 4" [kernel7.cpp:10]   --->   Operation 31 'load' 'b_load' <Predicate = (!icmp_ln6)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
 
 State 4 <SV = 3> <Delay = 7.71>
-ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%bitcast_ln8 = bitcast float %a_load to i32" [kernel7.cpp:8]   --->   Operation 32 'bitcast' 'bitcast_ln8' <Predicate = (!icmp_ln6)> <Delay = 0.00>
-ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%tmp = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln8, i32 23, i32 30)" [kernel7.cpp:8]   --->   Operation 33 'partselect' 'tmp' <Predicate = (!icmp_ln6)> <Delay = 0.00>
-ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%trunc_ln8 = trunc i32 %bitcast_ln8 to i23" [kernel7.cpp:8]   --->   Operation 34 'trunc' 'trunc_ln8' <Predicate = (!icmp_ln6)> <Delay = 0.00>
-ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%bitcast_ln8_1 = bitcast float %b_load to i32" [kernel7.cpp:8]   --->   Operation 35 'bitcast' 'bitcast_ln8_1' <Predicate = (!icmp_ln6)> <Delay = 0.00>
-ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_3 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln8_1, i32 23, i32 30)" [kernel7.cpp:8]   --->   Operation 36 'partselect' 'tmp_3' <Predicate = (!icmp_ln6)> <Delay = 0.00>
-ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%trunc_ln8_1 = trunc i32 %bitcast_ln8_1 to i23" [kernel7.cpp:8]   --->   Operation 37 'trunc' 'trunc_ln8_1' <Predicate = (!icmp_ln6)> <Delay = 0.00>
-ST_4 : Operation 38 [1/1] (1.22ns)   --->   "%icmp_ln8 = icmp ne i8 %tmp, -1" [kernel7.cpp:8]   --->   Operation 38 'icmp' 'icmp_ln8' <Predicate = (!icmp_ln6)> <Delay = 1.22> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 39 [1/1] (1.51ns)   --->   "%icmp_ln8_1 = icmp eq i23 %trunc_ln8, 0" [kernel7.cpp:8]   --->   Operation 39 'icmp' 'icmp_ln8_1' <Predicate = (!icmp_ln6)> <Delay = 1.51> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 40 [1/1] (1.22ns)   --->   "%icmp_ln8_2 = icmp ne i8 %tmp_3, -1" [kernel7.cpp:8]   --->   Operation 40 'icmp' 'icmp_ln8_2' <Predicate = (!icmp_ln6)> <Delay = 1.22> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 41 [1/1] (1.51ns)   --->   "%icmp_ln8_3 = icmp eq i23 %trunc_ln8_1, 0" [kernel7.cpp:8]   --->   Operation 41 'icmp' 'icmp_ln8_3' <Predicate = (!icmp_ln6)> <Delay = 1.51> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 42 [2/2] (3.34ns)   --->   "%tmp_4 = fcmp ogt float %a_load, %b_load" [kernel7.cpp:8]   --->   Operation 42 'fcmp' 'tmp_4' <Predicate = (!icmp_ln6)> <Delay = 3.34> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 3.34> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 43 [4/4] (7.71ns)   --->   "%tmp_1 = fsub float %a_load, %b_load" [kernel7.cpp:10]   --->   Operation 43 'fsub' 'tmp_1' <Predicate = (!icmp_ln6)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%bitcast_ln10 = bitcast float %a_load to i32" [kernel7.cpp:10]   --->   Operation 32 'bitcast' 'bitcast_ln10' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%tmp = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln10, i32 23, i32 30)" [kernel7.cpp:10]   --->   Operation 33 'partselect' 'tmp' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%trunc_ln10 = trunc i32 %bitcast_ln10 to i23" [kernel7.cpp:10]   --->   Operation 34 'trunc' 'trunc_ln10' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%bitcast_ln10_1 = bitcast float %b_load to i32" [kernel7.cpp:10]   --->   Operation 35 'bitcast' 'bitcast_ln10_1' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_3 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln10_1, i32 23, i32 30)" [kernel7.cpp:10]   --->   Operation 36 'partselect' 'tmp_3' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%trunc_ln10_1 = trunc i32 %bitcast_ln10_1 to i23" [kernel7.cpp:10]   --->   Operation 37 'trunc' 'trunc_ln10_1' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (1.22ns)   --->   "%icmp_ln10 = icmp ne i8 %tmp, -1" [kernel7.cpp:10]   --->   Operation 38 'icmp' 'icmp_ln10' <Predicate = (!icmp_ln6)> <Delay = 1.22> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 39 [1/1] (1.51ns)   --->   "%icmp_ln10_1 = icmp eq i23 %trunc_ln10, 0" [kernel7.cpp:10]   --->   Operation 39 'icmp' 'icmp_ln10_1' <Predicate = (!icmp_ln6)> <Delay = 1.51> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 40 [1/1] (1.22ns)   --->   "%icmp_ln10_2 = icmp ne i8 %tmp_3, -1" [kernel7.cpp:10]   --->   Operation 40 'icmp' 'icmp_ln10_2' <Predicate = (!icmp_ln6)> <Delay = 1.22> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 41 [1/1] (1.51ns)   --->   "%icmp_ln10_3 = icmp eq i23 %trunc_ln10_1, 0" [kernel7.cpp:10]   --->   Operation 41 'icmp' 'icmp_ln10_3' <Predicate = (!icmp_ln6)> <Delay = 1.51> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 42 [2/2] (3.34ns)   --->   "%tmp_4 = fcmp ogt float %a_load, %b_load" [kernel7.cpp:10]   --->   Operation 42 'fcmp' 'tmp_4' <Predicate = (!icmp_ln6)> <Delay = 3.34> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 3.34> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 43 [4/4] (7.71ns)   --->   "%tmp_1 = fsub float %a_load, %b_load" [kernel7.cpp:12]   --->   Operation 43 'fsub' 'tmp_1' <Predicate = (!icmp_ln6)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 5 <SV = 4> <Delay = 7.71>
-ST_5 : Operation 44 [1/2] (3.34ns)   --->   "%tmp_4 = fcmp ogt float %a_load, %b_load" [kernel7.cpp:8]   --->   Operation 44 'fcmp' 'tmp_4' <Predicate = (!icmp_ln6)> <Delay = 3.34> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 3.34> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 45 [3/4] (7.71ns)   --->   "%tmp_1 = fsub float %a_load, %b_load" [kernel7.cpp:10]   --->   Operation 45 'fsub' 'tmp_1' <Predicate = (!icmp_ln6)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 44 [1/2] (3.34ns)   --->   "%tmp_4 = fcmp ogt float %a_load, %b_load" [kernel7.cpp:10]   --->   Operation 44 'fcmp' 'tmp_4' <Predicate = (!icmp_ln6)> <Delay = 3.34> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 3.34> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 45 [3/4] (7.71ns)   --->   "%tmp_1 = fsub float %a_load, %b_load" [kernel7.cpp:12]   --->   Operation 45 'fsub' 'tmp_1' <Predicate = (!icmp_ln6)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 7.71>
-ST_6 : Operation 46 [2/4] (7.71ns)   --->   "%tmp_1 = fsub float %a_load, %b_load" [kernel7.cpp:10]   --->   Operation 46 'fsub' 'tmp_1' <Predicate = (!icmp_ln6)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 46 [2/4] (7.71ns)   --->   "%tmp_1 = fsub float %a_load, %b_load" [kernel7.cpp:12]   --->   Operation 46 'fsub' 'tmp_1' <Predicate = (!icmp_ln6)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 7 <SV = 6> <Delay = 7.71>
-ST_7 : Operation 47 [1/4] (7.71ns)   --->   "%tmp_1 = fsub float %a_load, %b_load" [kernel7.cpp:10]   --->   Operation 47 'fsub' 'tmp_1' <Predicate = (!icmp_ln6)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 47 [1/4] (7.71ns)   --->   "%tmp_1 = fsub float %a_load, %b_load" [kernel7.cpp:12]   --->   Operation 47 'fsub' 'tmp_1' <Predicate = (!icmp_ln6)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 8 <SV = 7> <Delay = 0.61>
-ST_8 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node and_ln8_1)   --->   "%or_ln8 = or i1 %icmp_ln8_1, %icmp_ln8" [kernel7.cpp:8]   --->   Operation 48 'or' 'or_ln8' <Predicate = (!icmp_ln6)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 49 [1/1] (0.00ns) (grouped into LUT with out node and_ln8_1)   --->   "%or_ln8_1 = or i1 %icmp_ln8_3, %icmp_ln8_2" [kernel7.cpp:8]   --->   Operation 49 'or' 'or_ln8_1' <Predicate = (!icmp_ln6)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 50 [1/1] (0.00ns) (grouped into LUT with out node and_ln8_1)   --->   "%and_ln8 = and i1 %or_ln8, %or_ln8_1" [kernel7.cpp:8]   --->   Operation 50 'and' 'and_ln8' <Predicate = (!icmp_ln6)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 51 [1/1] (0.61ns) (out node of the LUT)   --->   "%and_ln8_1 = and i1 %and_ln8, %tmp_4" [kernel7.cpp:8]   --->   Operation 51 'and' 'and_ln8_1' <Predicate = (!icmp_ln6)> <Delay = 0.61> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node and_ln10_1)   --->   "%or_ln10 = or i1 %icmp_ln10_1, %icmp_ln10" [kernel7.cpp:10]   --->   Operation 48 'or' 'or_ln10' <Predicate = (!icmp_ln6)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 49 [1/1] (0.00ns) (grouped into LUT with out node and_ln10_1)   --->   "%or_ln10_1 = or i1 %icmp_ln10_3, %icmp_ln10_2" [kernel7.cpp:10]   --->   Operation 49 'or' 'or_ln10_1' <Predicate = (!icmp_ln6)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 50 [1/1] (0.00ns) (grouped into LUT with out node and_ln10_1)   --->   "%and_ln10 = and i1 %or_ln10, %or_ln10_1" [kernel7.cpp:10]   --->   Operation 50 'and' 'and_ln10' <Predicate = (!icmp_ln6)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 51 [1/1] (0.61ns) (out node of the LUT)   --->   "%and_ln10_1 = and i1 %and_ln10, %tmp_4" [kernel7.cpp:10]   --->   Operation 51 'and' 'and_ln10_1' <Predicate = (!icmp_ln6)> <Delay = 0.61> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 
 State 9 <SV = 8> <Delay = 7.71>
-ST_9 : Operation 52 [4/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %tmp_1" [kernel7.cpp:10]   --->   Operation 52 'fadd' 'sum' <Predicate = (!icmp_ln6 & and_ln8_1)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 52 [4/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %tmp_1" [kernel7.cpp:12]   --->   Operation 52 'fadd' 'sum' <Predicate = (!icmp_ln6 & and_ln10_1)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 10 <SV = 9> <Delay = 7.71>
-ST_10 : Operation 53 [3/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %tmp_1" [kernel7.cpp:10]   --->   Operation 53 'fadd' 'sum' <Predicate = (!icmp_ln6 & and_ln8_1)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 53 [3/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %tmp_1" [kernel7.cpp:12]   --->   Operation 53 'fadd' 'sum' <Predicate = (!icmp_ln6 & and_ln10_1)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 11 <SV = 10> <Delay = 7.71>
-ST_11 : Operation 54 [2/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %tmp_1" [kernel7.cpp:10]   --->   Operation 54 'fadd' 'sum' <Predicate = (!icmp_ln6 & and_ln8_1)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 54 [2/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %tmp_1" [kernel7.cpp:12]   --->   Operation 54 'fadd' 'sum' <Predicate = (!icmp_ln6 & and_ln10_1)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 12 <SV = 11> <Delay = 8.34>
 ST_12 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str) nounwind" [kernel7.cpp:7]   --->   Operation 55 'specloopname' <Predicate = (!icmp_ln6)> <Delay = 0.00>
 ST_12 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([5 x i8]* @p_str) nounwind" [kernel7.cpp:7]   --->   Operation 56 'specregionbegin' 'tmp_2' <Predicate = (!icmp_ln6)> <Delay = 0.00>
 ST_12 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [kernel7.cpp:8]   --->   Operation 57 'specpipeline' <Predicate = (!icmp_ln6)> <Delay = 0.00>
-ST_12 : Operation 58 [1/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %tmp_1" [kernel7.cpp:10]   --->   Operation 58 'fadd' 'sum' <Predicate = (!icmp_ln6 & and_ln8_1)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_12 : Operation 59 [1/1] (0.63ns) (out node of the LUT)   --->   "%sum_1 = select i1 %and_ln8_1, float %sum, float %sum_0" [kernel7.cpp:8]   --->   Operation 59 'select' 'sum_1' <Predicate = (!icmp_ln6)> <Delay = 0.63> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.63> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_12 : Operation 60 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([5 x i8]* @p_str, i32 %tmp_2) nounwind" [kernel7.cpp:12]   --->   Operation 60 'specregionend' 'empty_4' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_12 : Operation 58 [1/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %tmp_1" [kernel7.cpp:12]   --->   Operation 58 'fadd' 'sum' <Predicate = (!icmp_ln6 & and_ln10_1)> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 59 [1/1] (0.63ns) (out node of the LUT)   --->   "%sum_1 = select i1 %and_ln10_1, float %sum, float %sum_0" [kernel7.cpp:10]   --->   Operation 59 'select' 'sum_1' <Predicate = (!icmp_ln6)> <Delay = 0.63> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.63> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_12 : Operation 60 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([5 x i8]* @p_str, i32 %tmp_2) nounwind" [kernel7.cpp:14]   --->   Operation 60 'specregionend' 'empty_4' <Predicate = (!icmp_ln6)> <Delay = 0.00>
 ST_12 : Operation 61 [1/1] (0.00ns)   --->   "br label %1" [kernel7.cpp:6]   --->   Operation 61 'br' <Predicate = (!icmp_ln6)> <Delay = 0.00>
 
 State 13 <SV = 2> <Delay = 0.00>
-ST_13 : Operation 62 [1/1] (0.00ns)   --->   "ret float %sum_0" [kernel7.cpp:19]   --->   Operation 62 'ret' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 62 [1/1] (0.00ns)   --->   "ret float %sum_0" [kernel7.cpp:21]   --->   Operation 62 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -331,27 +331,27 @@ icmp_ln6          (icmp             ) [ 00111111111110]
 empty             (speclooptripcount) [ 00000000000000]
 i                 (add              ) [ 01111111111110]
 br_ln6            (br               ) [ 00000000000000]
-zext_ln8          (zext             ) [ 00000000000000]
+zext_ln10         (zext             ) [ 00000000000000]
 a_addr            (getelementptr    ) [ 00010000000000]
 b_addr            (getelementptr    ) [ 00010000000000]
 a_load            (load             ) [ 00111111000000]
 b_load            (load             ) [ 00111111000000]
-bitcast_ln8       (bitcast          ) [ 00000000000000]
+bitcast_ln10      (bitcast          ) [ 00000000000000]
 tmp               (partselect       ) [ 00000000000000]
-trunc_ln8         (trunc            ) [ 00000000000000]
-bitcast_ln8_1     (bitcast          ) [ 00000000000000]
+trunc_ln10        (trunc            ) [ 00000000000000]
+bitcast_ln10_1    (bitcast          ) [ 00000000000000]
 tmp_3             (partselect       ) [ 00000000000000]
-trunc_ln8_1       (trunc            ) [ 00000000000000]
-icmp_ln8          (icmp             ) [ 00111111100000]
-icmp_ln8_1        (icmp             ) [ 00111111100000]
-icmp_ln8_2        (icmp             ) [ 00111111100000]
-icmp_ln8_3        (icmp             ) [ 00111111100000]
+trunc_ln10_1      (trunc            ) [ 00000000000000]
+icmp_ln10         (icmp             ) [ 00111111100000]
+icmp_ln10_1       (icmp             ) [ 00111111100000]
+icmp_ln10_2       (icmp             ) [ 00111111100000]
+icmp_ln10_3       (icmp             ) [ 00111111100000]
 tmp_4             (fcmp             ) [ 00111011100000]
 tmp_1             (fsub             ) [ 00111100111110]
-or_ln8            (or               ) [ 00000000000000]
-or_ln8_1          (or               ) [ 00000000000000]
-and_ln8           (and              ) [ 00000000000000]
-and_ln8_1         (and              ) [ 00111100011110]
+or_ln10           (or               ) [ 00000000000000]
+or_ln10_1         (or               ) [ 00000000000000]
+and_ln10          (and              ) [ 00000000000000]
+and_ln10_1        (and              ) [ 00111100011110]
 specloopname_ln7  (specloopname     ) [ 00000000000000]
 tmp_2             (specregionbegin  ) [ 00000000000000]
 specpipeline_ln8  (specpipeline     ) [ 00000000000000]
@@ -359,7 +359,7 @@ sum               (fadd             ) [ 00000000000000]
 sum_1             (select           ) [ 01111111111110]
 empty_4           (specregionend    ) [ 00000000000000]
 br_ln6            (br               ) [ 01111111111110]
-ret_ln19          (ret              ) [ 00000000000000]
+ret_ln21          (ret              ) [ 00000000000000]
 </LifeTime>
 
 <model>
@@ -749,25 +749,25 @@ ret_ln19          (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="122" class="1004" name="zext_ln8_fu_122">
+<comp id="122" class="1004" name="zext_ln10_fu_122">
 <pin_list>
 <pin id="123" dir="0" index="0" bw="11" slack="0"/>
 <pin id="124" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln8/2 "/>
+<opset="zext_ln10/2 "/>
 </bind>
 </comp>
 
-<comp id="128" class="1004" name="bitcast_ln8_fu_128">
+<comp id="128" class="1004" name="bitcast_ln10_fu_128">
 <pin_list>
 <pin id="129" dir="0" index="0" bw="32" slack="1"/>
 <pin id="130" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="bitcast(44) " fcode="bitcast"/>
-<opset="bitcast_ln8/4 "/>
+<opset="bitcast_ln10/4 "/>
 </bind>
 </comp>
 
@@ -785,25 +785,25 @@ ret_ln19          (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="141" class="1004" name="trunc_ln8_fu_141">
+<comp id="141" class="1004" name="trunc_ln10_fu_141">
 <pin_list>
 <pin id="142" dir="0" index="0" bw="32" slack="0"/>
 <pin id="143" dir="1" index="1" bw="23" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln8/4 "/>
+<opset="trunc_ln10/4 "/>
 </bind>
 </comp>
 
-<comp id="145" class="1004" name="bitcast_ln8_1_fu_145">
+<comp id="145" class="1004" name="bitcast_ln10_1_fu_145">
 <pin_list>
 <pin id="146" dir="0" index="0" bw="32" slack="1"/>
 <pin id="147" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="bitcast(44) " fcode="bitcast"/>
-<opset="bitcast_ln8_1/4 "/>
+<opset="bitcast_ln10_1/4 "/>
 </bind>
 </comp>
 
@@ -821,18 +821,18 @@ ret_ln19          (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="158" class="1004" name="trunc_ln8_1_fu_158">
+<comp id="158" class="1004" name="trunc_ln10_1_fu_158">
 <pin_list>
 <pin id="159" dir="0" index="0" bw="32" slack="0"/>
 <pin id="160" dir="1" index="1" bw="23" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln8_1/4 "/>
+<opset="trunc_ln10_1/4 "/>
 </bind>
 </comp>
 
-<comp id="162" class="1004" name="icmp_ln8_fu_162">
+<comp id="162" class="1004" name="icmp_ln10_fu_162">
 <pin_list>
 <pin id="163" dir="0" index="0" bw="8" slack="0"/>
 <pin id="164" dir="0" index="1" bw="8" slack="0"/>
@@ -840,11 +840,11 @@ ret_ln19          (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln8/4 "/>
+<opset="icmp_ln10/4 "/>
 </bind>
 </comp>
 
-<comp id="168" class="1004" name="icmp_ln8_1_fu_168">
+<comp id="168" class="1004" name="icmp_ln10_1_fu_168">
 <pin_list>
 <pin id="169" dir="0" index="0" bw="23" slack="0"/>
 <pin id="170" dir="0" index="1" bw="23" slack="0"/>
@@ -852,11 +852,11 @@ ret_ln19          (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln8_1/4 "/>
+<opset="icmp_ln10_1/4 "/>
 </bind>
 </comp>
 
-<comp id="174" class="1004" name="icmp_ln8_2_fu_174">
+<comp id="174" class="1004" name="icmp_ln10_2_fu_174">
 <pin_list>
 <pin id="175" dir="0" index="0" bw="8" slack="0"/>
 <pin id="176" dir="0" index="1" bw="8" slack="0"/>
@@ -864,11 +864,11 @@ ret_ln19          (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln8_2/4 "/>
+<opset="icmp_ln10_2/4 "/>
 </bind>
 </comp>
 
-<comp id="180" class="1004" name="icmp_ln8_3_fu_180">
+<comp id="180" class="1004" name="icmp_ln10_3_fu_180">
 <pin_list>
 <pin id="181" dir="0" index="0" bw="23" slack="0"/>
 <pin id="182" dir="0" index="1" bw="23" slack="0"/>
@@ -876,11 +876,11 @@ ret_ln19          (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln8_3/4 "/>
+<opset="icmp_ln10_3/4 "/>
 </bind>
 </comp>
 
-<comp id="186" class="1004" name="or_ln8_fu_186">
+<comp id="186" class="1004" name="or_ln10_fu_186">
 <pin_list>
 <pin id="187" dir="0" index="0" bw="1" slack="4"/>
 <pin id="188" dir="0" index="1" bw="1" slack="4"/>
@@ -888,11 +888,11 @@ ret_ln19          (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
-<opset="or_ln8/8 "/>
+<opset="or_ln10/8 "/>
 </bind>
 </comp>
 
-<comp id="190" class="1004" name="or_ln8_1_fu_190">
+<comp id="190" class="1004" name="or_ln10_1_fu_190">
 <pin_list>
 <pin id="191" dir="0" index="0" bw="1" slack="4"/>
 <pin id="192" dir="0" index="1" bw="1" slack="4"/>
@@ -900,11 +900,11 @@ ret_ln19          (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
-<opset="or_ln8_1/8 "/>
+<opset="or_ln10_1/8 "/>
 </bind>
 </comp>
 
-<comp id="194" class="1004" name="and_ln8_fu_194">
+<comp id="194" class="1004" name="and_ln10_fu_194">
 <pin_list>
 <pin id="195" dir="0" index="0" bw="1" slack="0"/>
 <pin id="196" dir="0" index="1" bw="1" slack="0"/>
@@ -912,11 +912,11 @@ ret_ln19          (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
-<opset="and_ln8/8 "/>
+<opset="and_ln10/8 "/>
 </bind>
 </comp>
 
-<comp id="200" class="1004" name="and_ln8_1_fu_200">
+<comp id="200" class="1004" name="and_ln10_1_fu_200">
 <pin_list>
 <pin id="201" dir="0" index="0" bw="1" slack="0"/>
 <pin id="202" dir="0" index="1" bw="1" slack="3"/>
@@ -924,7 +924,7 @@ ret_ln19          (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
-<opset="and_ln8_1/8 "/>
+<opset="and_ln10_1/8 "/>
 </bind>
 </comp>
 
@@ -1001,43 +1001,43 @@ ret_ln19          (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="245" class="1005" name="icmp_ln8_reg_245">
+<comp id="245" class="1005" name="icmp_ln10_reg_245">
 <pin_list>
 <pin id="246" dir="0" index="0" bw="1" slack="4"/>
 <pin id="247" dir="1" index="1" bw="1" slack="4"/>
 </pin_list>
 <bind>
-<opset="icmp_ln8 "/>
+<opset="icmp_ln10 "/>
 </bind>
 </comp>
 
-<comp id="250" class="1005" name="icmp_ln8_1_reg_250">
+<comp id="250" class="1005" name="icmp_ln10_1_reg_250">
 <pin_list>
 <pin id="251" dir="0" index="0" bw="1" slack="4"/>
 <pin id="252" dir="1" index="1" bw="1" slack="4"/>
 </pin_list>
 <bind>
-<opset="icmp_ln8_1 "/>
+<opset="icmp_ln10_1 "/>
 </bind>
 </comp>
 
-<comp id="255" class="1005" name="icmp_ln8_2_reg_255">
+<comp id="255" class="1005" name="icmp_ln10_2_reg_255">
 <pin_list>
 <pin id="256" dir="0" index="0" bw="1" slack="4"/>
 <pin id="257" dir="1" index="1" bw="1" slack="4"/>
 </pin_list>
 <bind>
-<opset="icmp_ln8_2 "/>
+<opset="icmp_ln10_2 "/>
 </bind>
 </comp>
 
-<comp id="260" class="1005" name="icmp_ln8_3_reg_260">
+<comp id="260" class="1005" name="icmp_ln10_3_reg_260">
 <pin_list>
 <pin id="261" dir="0" index="0" bw="1" slack="4"/>
 <pin id="262" dir="1" index="1" bw="1" slack="4"/>
 </pin_list>
 <bind>
-<opset="icmp_ln8_3 "/>
+<opset="icmp_ln10_3 "/>
 </bind>
 </comp>
 
@@ -1061,13 +1061,13 @@ ret_ln19          (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="275" class="1005" name="and_ln8_1_reg_275">
+<comp id="275" class="1005" name="and_ln10_1_reg_275">
 <pin_list>
 <pin id="276" dir="0" index="0" bw="1" slack="1"/>
 <pin id="277" dir="1" index="1" bw="1" slack="4"/>
 </pin_list>
 <bind>
-<opset="and_ln8_1 "/>
+<opset="and_ln10_1 "/>
 </bind>
 </comp>
 
@@ -1246,7 +1246,7 @@ ret_ln19          (ret              ) [ 00000000000000]
 		icmp_ln6 : 1
 		i : 1
 		br_ln6 : 2
-		zext_ln8 : 1
+		zext_ln10 : 1
 		a_addr : 2
 		a_load : 3
 		b_addr : 2
@@ -1254,13 +1254,13 @@ ret_ln19          (ret              ) [ 00000000000000]
 	State 3
 	State 4
 		tmp : 1
-		trunc_ln8 : 1
+		trunc_ln10 : 1
 		tmp_3 : 1
-		trunc_ln8_1 : 1
-		icmp_ln8 : 2
-		icmp_ln8_1 : 2
-		icmp_ln8_2 : 2
-		icmp_ln8_3 : 2
+		trunc_ln10_1 : 1
+		icmp_ln10 : 2
+		icmp_ln10_1 : 2
+		icmp_ln10_2 : 2
+		icmp_ln10_3 : 2
 	State 5
 	State 6
 	State 7
@@ -1279,66 +1279,66 @@ ret_ln19          (ret              ) [ 00000000000000]
 ============================================================
 
 * Functional unit list:
-|----------|--------------------|---------|---------|---------|
-| Operation|   Functional Unit  |  DSP48E |    FF   |   LUT   |
-|----------|--------------------|---------|---------|---------|
-|   fadd   |     grp_fu_101     |    2    |   227   |   214   |
-|----------|--------------------|---------|---------|---------|
-|   fcmp   |     grp_fu_106     |    0    |    66   |    66   |
-|----------|--------------------|---------|---------|---------|
-|          |   icmp_ln6_fu_110  |    0    |    0    |    13   |
-|          |   icmp_ln8_fu_162  |    0    |    0    |    11   |
-|   icmp   |  icmp_ln8_1_fu_168 |    0    |    0    |    18   |
-|          |  icmp_ln8_2_fu_174 |    0    |    0    |    11   |
-|          |  icmp_ln8_3_fu_180 |    0    |    0    |    18   |
-|----------|--------------------|---------|---------|---------|
-|  select  |    sum_1_fu_205    |    0    |    0    |    32   |
-|----------|--------------------|---------|---------|---------|
-|    add   |      i_fu_116      |    0    |    0    |    18   |
-|----------|--------------------|---------|---------|---------|
-|    or    |    or_ln8_fu_186   |    0    |    0    |    6    |
-|          |   or_ln8_1_fu_190  |    0    |    0    |    6    |
-|----------|--------------------|---------|---------|---------|
-|    and   |   and_ln8_fu_194   |    0    |    0    |    6    |
-|          |  and_ln8_1_fu_200  |    0    |    0    |    6    |
-|----------|--------------------|---------|---------|---------|
-|   zext   |   zext_ln8_fu_122  |    0    |    0    |    0    |
-|----------|--------------------|---------|---------|---------|
-|partselect|     tmp_fu_131     |    0    |    0    |    0    |
-|          |    tmp_3_fu_148    |    0    |    0    |    0    |
-|----------|--------------------|---------|---------|---------|
-|   trunc  |  trunc_ln8_fu_141  |    0    |    0    |    0    |
-|          | trunc_ln8_1_fu_158 |    0    |    0    |    0    |
-|----------|--------------------|---------|---------|---------|
-|   Total  |                    |    2    |   293   |   425   |
-|----------|--------------------|---------|---------|---------|
+|----------|---------------------|---------|---------|---------|
+| Operation|   Functional Unit   |  DSP48E |    FF   |   LUT   |
+|----------|---------------------|---------|---------|---------|
+|   fadd   |      grp_fu_101     |    2    |   227   |   214   |
+|----------|---------------------|---------|---------|---------|
+|   fcmp   |      grp_fu_106     |    0    |    66   |    66   |
+|----------|---------------------|---------|---------|---------|
+|          |   icmp_ln6_fu_110   |    0    |    0    |    13   |
+|          |   icmp_ln10_fu_162  |    0    |    0    |    11   |
+|   icmp   |  icmp_ln10_1_fu_168 |    0    |    0    |    18   |
+|          |  icmp_ln10_2_fu_174 |    0    |    0    |    11   |
+|          |  icmp_ln10_3_fu_180 |    0    |    0    |    18   |
+|----------|---------------------|---------|---------|---------|
+|  select  |     sum_1_fu_205    |    0    |    0    |    32   |
+|----------|---------------------|---------|---------|---------|
+|    add   |       i_fu_116      |    0    |    0    |    18   |
+|----------|---------------------|---------|---------|---------|
+|    or    |    or_ln10_fu_186   |    0    |    0    |    6    |
+|          |   or_ln10_1_fu_190  |    0    |    0    |    6    |
+|----------|---------------------|---------|---------|---------|
+|    and   |   and_ln10_fu_194   |    0    |    0    |    6    |
+|          |  and_ln10_1_fu_200  |    0    |    0    |    6    |
+|----------|---------------------|---------|---------|---------|
+|   zext   |   zext_ln10_fu_122  |    0    |    0    |    0    |
+|----------|---------------------|---------|---------|---------|
+|partselect|      tmp_fu_131     |    0    |    0    |    0    |
+|          |     tmp_3_fu_148    |    0    |    0    |    0    |
+|----------|---------------------|---------|---------|---------|
+|   trunc  |  trunc_ln10_fu_141  |    0    |    0    |    0    |
+|          | trunc_ln10_1_fu_158 |    0    |    0    |    0    |
+|----------|---------------------|---------|---------|---------|
+|   Total  |                     |    2    |   293   |   425   |
+|----------|---------------------|---------|---------|---------|
 
 Memories:
 N/A
 
 * Register list:
-+------------------+--------+
-|                  |   FF   |
-+------------------+--------+
-|  a_addr_reg_221  |   10   |
-|  a_load_reg_231  |   32   |
-| and_ln8_1_reg_275|    1   |
-|  b_addr_reg_226  |   10   |
-|  b_load_reg_238  |   32   |
-|    i_0_reg_90    |   11   |
-|     i_reg_216    |   11   |
-| icmp_ln6_reg_212 |    1   |
-|icmp_ln8_1_reg_250|    1   |
-|icmp_ln8_2_reg_255|    1   |
-|icmp_ln8_3_reg_260|    1   |
-| icmp_ln8_reg_245 |    1   |
-|   sum_0_reg_78   |   32   |
-|   sum_1_reg_280  |   32   |
-|   tmp_1_reg_270  |   32   |
-|   tmp_4_reg_265  |    1   |
-+------------------+--------+
-|       Total      |   209  |
-+------------------+--------+
++-------------------+--------+
+|                   |   FF   |
++-------------------+--------+
+|   a_addr_reg_221  |   10   |
+|   a_load_reg_231  |   32   |
+| and_ln10_1_reg_275|    1   |
+|   b_addr_reg_226  |   10   |
+|   b_load_reg_238  |   32   |
+|     i_0_reg_90    |   11   |
+|     i_reg_216     |   11   |
+|icmp_ln10_1_reg_250|    1   |
+|icmp_ln10_2_reg_255|    1   |
+|icmp_ln10_3_reg_260|    1   |
+| icmp_ln10_reg_245 |    1   |
+|  icmp_ln6_reg_212 |    1   |
+|    sum_0_reg_78   |   32   |
+|   sum_1_reg_280   |   32   |
+|   tmp_1_reg_270   |   32   |
+|   tmp_4_reg_265   |    1   |
++-------------------+--------+
+|       Total       |   209  |
++-------------------+--------+
 
 * Multiplexer (MUX) list: 
 |------------------|------|------|------|--------||---------||---------|

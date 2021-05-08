@@ -1,16 +1,61 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Kushagra' on host 'desktop-7cm7rrt' (Windows NT_amd64 version 6.2) on Sat May 08 02:57:57 +0200 2021
+INFO: [HLS 200-10] For user 'Kushagra' on host 'desktop-7cm7rrt' (Windows NT_amd64 version 6.2) on Sat May 08 04:09:56 +0200 2021
 INFO: [HLS 200-10] In directory 'C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7'
-Sourcing Tcl script 'C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7/prj_kernel7/pipeline/csim.tcl'
+Sourcing Tcl script 'C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7/prj_kernel7/pipeline/csynth.tcl'
 INFO: [HLS 200-10] Opening project 'C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7/prj_kernel7'.
+INFO: [HLS 200-10] Adding design file 'kernel7.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'kernel7_test.cpp' to the project
 INFO: [HLS 200-10] Opening solution 'C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7/prj_kernel7/pipeline'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../kernel7_test.cpp in debug mode
-   Compiling ../../../../kernel7.cpp in debug mode
-   Generating csim.exe
-Test passed !
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel7.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.070 ; gain = 96.137
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.070 ; gain = 96.137
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.070 ; gain = 96.137
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.070 ; gain = 96.137
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (kernel7.cpp:7:6) to (kernel7.cpp:6:31) in function 'kernel7'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.070 ; gain = 96.137
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.070 ; gain = 96.137
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel7' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'select' operation ('sum', kernel7.cpp:10) and 'fadd' operation ('sum', kernel7.cpp:12).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'select' operation ('sum', kernel7.cpp:10) and 'fadd' operation ('sum', kernel7.cpp:12).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'select' operation ('sum', kernel7.cpp:10) and 'fadd' operation ('sum', kernel7.cpp:12).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 11.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.612 seconds; current allocated memory: 101.762 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 101.978 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel7/a' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel7/b' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel7' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'kernel7_faddfsub_32ns_32ns_32_4_full_dsp_1' to 'kernel7_faddfsub_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'kernel7_fcmp_32ns_32ns_1_2_1' to 'kernel7_fcmp_32nscud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'kernel7_faddfsub_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'kernel7_fcmp_32nscud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel7'.
+INFO: [HLS 200-111]  Elapsed time: 0.126 seconds; current allocated memory: 102.478 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 119.79 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 186.070 ; gain = 96.137
+INFO: [VHDL 208-304] Generating VHDL RTL for kernel7.
+INFO: [VLOG 209-307] Generating Verilog RTL for kernel7.
+INFO: [HLS 200-112] Total elapsed time: 8.289 seconds; peak allocated memory: 102.478 MB.

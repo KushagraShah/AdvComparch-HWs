@@ -5,15 +5,13 @@
     <downStreamTool>
         <DownStreamTool name=""/>
     </downStreamTool>
-    <clockList>
-        <clock default="false" name="default" period="10"/>
-    </clockList>
     <config>
         <schedule model="kernel7"/>
     </config>
     <UIConfigurations>
-        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
+        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
             <Platform>xilinx/kintex7/kintex7</Platform>
+            <Platform>xilinx/kintex7/kintex7_fpv6</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -67,7 +65,10 @@
     </targetInfo>
     <libraryList>
         <library name="DefaultPlatform" value="xilinx/kintex7/kintex7"/>
-        <library value="xilinx/kintex7/kintex7_fpv6" name="DefaultPlatform"/>
+        <library name="DefaultPlatform" value="xilinx/kintex7/kintex7_fpv6"/>
     </libraryList>
+    <clockList>
+        <clock default="false" name="default" period="10"/>
+    </clockList>
 </solution>
 
