@@ -42,6 +42,11 @@
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7/prj_kernel7/original/.tcls</location>
 		</link>
 		<link>
+			<name>pipeline/constraints</name>
+			<type>2</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7/prj_kernel7/pipeline/.tcls</location>
+		</link>
+		<link>
 			<name>source/kernel7.cpp</name>
 			<type>1</type>
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7/kernel7.cpp</location>
@@ -65,6 +70,21 @@
 			<name>original/constraints/script.tcl</name>
 			<type>1</type>
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7/prj_kernel7/original/script.tcl</location>
+		</link>
+		<link>
+			<name>pipeline/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7/prj_kernel7/pipeline/pipeline.directive</location>
+		</link>
+		<link>
+			<name>pipeline/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7/prj_kernel7/pipeline/directives.tcl</location>
+		</link>
+		<link>
+			<name>pipeline/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7/prj_kernel7/pipeline/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
