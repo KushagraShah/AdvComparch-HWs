@@ -37,9 +37,19 @@
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/prj_kernel4/.apc/.tb</location>
 		</link>
 		<link>
+			<name>dependence/constraints</name>
+			<type>2</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/prj_kernel4/dependence/.tcls</location>
+		</link>
+		<link>
 			<name>original/constraints</name>
 			<type>2</type>
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/prj_kernel4/original/.tcls</location>
+		</link>
+		<link>
+			<name>pipeline/constraints</name>
+			<type>2</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/prj_kernel4/pipeline/.tcls</location>
 		</link>
 		<link>
 			<name>source/kernel4.cpp</name>
@@ -50,6 +60,21 @@
 			<name>testbench/kernel4_test.cpp</name>
 			<type>1</type>
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/kernel4_test.cpp</location>
+		</link>
+		<link>
+			<name>dependence/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/prj_kernel4/dependence/dependence.directive</location>
+		</link>
+		<link>
+			<name>dependence/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/prj_kernel4/dependence/directives.tcl</location>
+		</link>
+		<link>
+			<name>dependence/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/prj_kernel4/dependence/script.tcl</location>
 		</link>
 		<link>
 			<name>original/constraints/.xml.directive</name>
@@ -65,6 +90,21 @@
 			<name>original/constraints/script.tcl</name>
 			<type>1</type>
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/prj_kernel4/original/script.tcl</location>
+		</link>
+		<link>
+			<name>pipeline/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/prj_kernel4/pipeline/pipeline.directive</location>
+		</link>
+		<link>
+			<name>pipeline/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/prj_kernel4/pipeline/directives.tcl</location>
+		</link>
+		<link>
+			<name>pipeline/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel4/prj_kernel4/pipeline/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -1,0 +1,17 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "kernel4",
+          "label": "loop",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "kernel4",
+          "label": "addn",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        }
+      ]
+    }]}

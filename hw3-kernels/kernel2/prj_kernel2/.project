@@ -37,6 +37,11 @@
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/.apc/.tb</location>
 		</link>
 		<link>
+			<name>dependence/constraints</name>
+			<type>2</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/dependence/.tcls</location>
+		</link>
+		<link>
 			<name>original/constraints</name>
 			<type>2</type>
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/original/.tcls</location>
@@ -52,14 +57,24 @@
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/kernel2.cpp</location>
 		</link>
 		<link>
-			<name>test/constraints</name>
-			<type>2</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/test/.tcls</location>
-		</link>
-		<link>
 			<name>testbench/kernel2_test.cpp</name>
 			<type>1</type>
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/kernel2_test.cpp</location>
+		</link>
+		<link>
+			<name>dependence/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/dependence/dependence.directive</location>
+		</link>
+		<link>
+			<name>dependence/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/dependence/directives.tcl</location>
+		</link>
+		<link>
+			<name>dependence/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/dependence/script.tcl</location>
 		</link>
 		<link>
 			<name>original/constraints/.xml.directive</name>
@@ -90,21 +105,6 @@
 			<name>pipeline/constraints/script.tcl</name>
 			<type>1</type>
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/pipeline/script.tcl</location>
-		</link>
-		<link>
-			<name>test/constraints/.xml.directive</name>
-			<type>1</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/test/test.directive</location>
-		</link>
-		<link>
-			<name>test/constraints/directives.tcl</name>
-			<type>1</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/test/directives.tcl</location>
-		</link>
-		<link>
-			<name>test/constraints/script.tcl</name>
-			<type>1</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/test/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
