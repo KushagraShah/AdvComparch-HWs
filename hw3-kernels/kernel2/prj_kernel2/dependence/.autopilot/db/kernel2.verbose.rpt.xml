@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'kernel2'" level="0">
-<item name = "Date">Sat May  8 13:19:56 2021
+<item name = "Date">Sat May  8 14:37:22 2021
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">prj_kernel2</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2046, 2046, 20.460 us, 20.460 us, 2046, 2046, none</column>
+<column name="">1026, 1026, 10.260 us, 10.260 us, 1026, 1026, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop">2042, 2042, 3, 2, 1, 1021, yes</column>
+<column name="- loop">1022, 1022, 3, 1, 1, 1021, yes</column>
 </table>
 </item>
 </section>
@@ -48,12 +48,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, 6, 0, 211, -</column>
+<column name="Expression">-, 6, 0, 205, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 116, -</column>
-<column name="Register">-, -, 159, -, -</column>
+<column name="Multiplexer">-, -, -, 132, -</column>
+<column name="Register">-, -, 203, -, -</column>
 <specialColumn name="Available">650, 600, 202800, 101400, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 1, ~0, ~0, 0</specialColumn>
 </table>
@@ -78,43 +78,51 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="accum_fu_136_p2">*, 3, 0, 21, 32, 32</column>
-<column name="mul_ln12_fu_188_p2">*, 3, 0, 21, 32, 32</column>
-<column name="accum_1_fu_193_p2">+, 0, 0, 39, 32, 32</column>
-<column name="add_ln12_1_fu_159_p2">+, 0, 0, 18, 11, 3</column>
-<column name="add_ln12_fu_148_p2">+, 0, 0, 18, 11, 2</column>
-<column name="array_r_d1">+, 0, 0, 39, 32, 32</column>
-<column name="i_fu_182_p2">+, 0, 0, 18, 11, 1</column>
+<column name="accum_fu_133_p2">*, 3, 0, 21, 32, 32</column>
+<column name="mul_ln13_fu_172_p2">*, 3, 0, 21, 32, 32</column>
+<column name="accum_1_fu_178_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln13_fu_144_p2">+, 0, 0, 18, 11, 3</column>
+<column name="array_r_d0">+, 0, 0, 39, 32, 32</column>
+<column name="i_fu_155_p2">+, 0, 0, 18, 11, 1</column>
+<column name="ap_block_pp0">and, 0, 0, 6, 1, 1</column>
 <column name="ap_enable_state4_pp0_iter0_stage0">and, 0, 0, 6, 1, 1</column>
-<column name="ap_enable_state5_pp0_iter0_stage1">and, 0, 0, 6, 1, 1</column>
-<column name="icmp_ln9_fu_142_p2">icmp, 0, 0, 13, 11, 12</column>
-<column name="ap_block_pp0">or, 0, 0, 6, 1, 1</column>
+<column name="ap_enable_state5_pp0_iter1_stage0">and, 0, 0, 6, 1, 1</column>
+<column name="ap_enable_state6_pp0_iter2_stage0">and, 0, 0, 6, 1, 1</column>
+<column name="icmp_ln10_fu_138_p2">icmp, 0, 0, 13, 11, 12</column>
 <column name="ap_enable_pp0">xor, 0, 0, 6, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 6, 2, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="accum_0_reg_106">9, 2, 32, 64</column>
-<column name="ap_NS_fsm">38, 7, 1, 7</column>
+<column name="accum_0_reg_96">9, 2, 32, 64</column>
+<column name="ap_NS_fsm">33, 6, 1, 6</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_phi_mux_i_0_phi_fu_120_p4">9, 2, 11, 22</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="ap_phi_mux_i_0_phi_fu_110_p4">9, 2, 11, 22</column>
 <column name="array_r_address0">21, 4, 10, 40</column>
-<column name="array_r_address1">21, 4, 10, 40</column>
-<column name="i_0_reg_116">9, 2, 11, 22</column>
+<column name="array_r_address1">15, 3, 10, 30</column>
+<column name="i_0_reg_106">9, 2, 11, 22</column>
+<column name="reg_128">9, 2, 32, 64</column>
+<column name="tmp_0_reg_118">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="accum_0_reg_106">32, 0, 32, 0</column>
-<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="accum_0_reg_96">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="array_load_4_reg_233">32, 0, 32, 0</column>
-<column name="i_0_reg_116">11, 0, 11, 0</column>
-<column name="i_reg_238">11, 0, 11, 0</column>
-<column name="icmp_ln9_reg_219">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="array_load_1_reg_194">32, 0, 32, 0</column>
+<column name="elem2_reg_209">32, 0, 32, 0</column>
+<column name="i_0_reg_106">11, 0, 11, 0</column>
+<column name="i_0_reg_106_pp0_iter1_reg">11, 0, 11, 0</column>
+<column name="i_reg_224">11, 0, 11, 0</column>
+<column name="icmp_ln10_reg_215">1, 0, 1, 0</column>
+<column name="icmp_ln10_reg_215_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="reg_128">32, 0, 32, 0</column>
-<column name="reg_132">32, 0, 32, 0</column>
+<column name="tmp_0_reg_118">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -132,11 +140,11 @@
 <column name="ap_ready">out, 1, ap_ctrl_hs, kernel2, return value</column>
 <column name="array_r_address0">out, 10, ap_memory, array_r, array</column>
 <column name="array_r_ce0">out, 1, ap_memory, array_r, array</column>
+<column name="array_r_we0">out, 1, ap_memory, array_r, array</column>
+<column name="array_r_d0">out, 32, ap_memory, array_r, array</column>
 <column name="array_r_q0">in, 32, ap_memory, array_r, array</column>
 <column name="array_r_address1">out, 10, ap_memory, array_r, array</column>
 <column name="array_r_ce1">out, 1, ap_memory, array_r, array</column>
-<column name="array_r_we1">out, 1, ap_memory, array_r, array</column>
-<column name="array_r_d1">out, 32, ap_memory, array_r, array</column>
 <column name="array_r_q1">in, 32, ap_memory, array_r, array</column>
 </table>
 </item>

@@ -15,13 +15,11 @@
   "HlsSolution": {
     "DirectiveTcl": [
       "set_directive_pipeline kernel2\/loop ",
-      "set_directive_dependence kernel2\/loop ",
       "set_directive_dependence kernel2\/loop "
     ],
     "DirectiveInfo": [
       "pipeline kernel2\/loop {} {}",
-      "dependence kernel2\/loop {{variable array} {inter positionBoolean0type} {false positionBoolean0dependent}} {}",
-      "dependence kernel2\/loop {{variable accum} {inter positionBoolean0type} {false positionBoolean0dependent}} {}"
+      "dependence kernel2\/loop {{variable array} {inter positionBoolean0type} {false positionBoolean0dependent}} {}"
     ]
   },
   "Args": {"array": {
@@ -34,7 +32,7 @@
         "multiInterfaceRef": [
           "array_r_address0",
           "array_r_address1",
-          "array_r_d1",
+          "array_r_d0",
           "array_r_q0",
           "array_r_q1"
         ]
@@ -48,7 +46,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "2046",
+    "Latency": "1026",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -124,7 +122,7 @@
       "bundle_name": "array_r",
       "bundle_role": "address1"
     },
-    "array_r_d1": {
+    "array_r_d0": {
       "type": "data",
       "dir": "out",
       "width": "32",
@@ -133,7 +131,7 @@
           "Width": "32"
         }},
       "bundle_name": "array_r",
-      "bundle_role": "d1"
+      "bundle_role": "d0"
     },
     "array_r_q0": {
       "type": "data",
@@ -191,6 +189,14 @@
       "dir": "out",
       "width": "1"
     },
+    "array_r_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "array_r_d0": {
+      "dir": "out",
+      "width": "32"
+    },
     "array_r_q0": {
       "dir": "in",
       "width": "32"
@@ -202,14 +208,6 @@
     "array_r_ce1": {
       "dir": "out",
       "width": "1"
-    },
-    "array_r_we1": {
-      "dir": "out",
-      "width": "1"
-    },
-    "array_r_d1": {
-      "dir": "out",
-      "width": "32"
     },
     "array_r_q1": {
       "dir": "in",
@@ -227,10 +225,10 @@
       }},
     "Metrics": {"kernel2": {
         "Latency": {
-          "LatencyBest": "2046",
-          "LatencyAvg": "2046",
-          "LatencyWorst": "2046",
-          "PipelineII": "2047",
+          "LatencyBest": "1026",
+          "LatencyAvg": "1026",
+          "LatencyWorst": "1026",
+          "PipelineII": "1027",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -242,14 +240,14 @@
         "Loops": [{
             "Name": "loop",
             "TripCount": "1021",
-            "Latency": "2042",
-            "PipelineII": "2",
+            "Latency": "1022",
+            "PipelineII": "1",
             "PipelineDepth": "3"
           }],
         "Area": {
           "DSP48E": "6",
-          "FF": "159",
-          "LUT": "327",
+          "FF": "203",
+          "LUT": "337",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -265,7 +263,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-05-08 13:19:57 +0200",
+    "Time": "2021-05-08 14:37:23 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

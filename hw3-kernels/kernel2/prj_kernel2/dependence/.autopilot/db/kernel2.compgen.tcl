@@ -19,7 +19,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir IO \
     corename array_r \
     op interface \
-    ports { array_r_address0 { O 10 vector } array_r_ce0 { O 1 bit } array_r_q0 { I 32 vector } array_r_address1 { O 10 vector } array_r_ce1 { O 1 bit } array_r_we1 { O 1 bit } array_r_d1 { O 32 vector } array_r_q1 { I 32 vector } } \
+    ports { array_r_address0 { O 10 vector } array_r_ce0 { O 1 bit } array_r_we0 { O 1 bit } array_r_d0 { O 32 vector } array_r_q0 { I 32 vector } array_r_address1 { O 10 vector } array_r_ce1 { O 1 bit } array_r_q1 { I 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'array_r'"

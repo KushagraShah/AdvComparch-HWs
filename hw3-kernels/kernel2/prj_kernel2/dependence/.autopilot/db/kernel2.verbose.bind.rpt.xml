@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'kernel2'" level="0">
-<item name = "Date">Sat May  8 13:19:56 2021
+<item name = "Date">Sat May  8 14:37:22 2021
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">prj_kernel2</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2046, 2046, 20.460 us, 20.460 us, 2046, 2046, none</column>
+<column name="">1026, 1026, 10.260 us, 10.260 us, 1026, 1026, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop">2042, 2042, 3, 2, 1, 1021, yes</column>
+<column name="- loop">1022, 1022, 3, 1, 1, 1021, yes</column>
 </table>
 </item>
 </section>

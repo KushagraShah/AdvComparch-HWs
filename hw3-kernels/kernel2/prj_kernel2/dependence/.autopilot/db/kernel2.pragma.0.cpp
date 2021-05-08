@@ -165,20 +165,19 @@ void kernel2( int array[1024] )
     int i;
     int accum = array[1]*array[0];
     int elem2 = array[2];
+    int tmp = elem2;
 
     loop:for(i=3; i<1024; i++)
     {
-#pragma HLS DEPENDENCE variable=&accum inter false
-# 10 "kernel2.cpp"
-
 #pragma HLS DEPENDENCE variable=&array inter false
-# 10 "kernel2.cpp"
+# 11 "kernel2.cpp"
 
 #pragma HLS PIPELINE
-# 10 "kernel2.cpp"
+# 11 "kernel2.cpp"
 
      array[i] = elem2 + accum;
-     accum = accum + array[i-1]*array[i-2];
+     accum = accum + tmp*array[i-2];
+     tmp = array[i];
 
     }
 }
