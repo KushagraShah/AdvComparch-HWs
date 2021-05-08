@@ -1,0 +1,7 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="12" filename="kernel6.cpp" linenumber="8" name="mul_ln8" contextFuncName="kernel6" moduleName="kernel6" rtlName="mul_ln8_fu_46_p2" latency="0" BRAM="-1" DSP="3" FF="0" LUT="21" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels-optimized\kernel6"><\/item>
+<item  id="13" filename="kernel6.cpp" linenumber="8" name="icmp_ln8" contextFuncName="kernel6" moduleName="kernel6" rtlName="icmp_ln8_fu_52_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels-optimized\kernel6"><\/item>
+<item  id="14" filename="kernel6.cpp" linenumber="6" name="i" contextFuncName="kernel6" moduleName="kernel6" rtlName="i_fu_57_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels-optimized\kernel6"><\/item>
+<\/annotationInfo>
+</annotationInfo>

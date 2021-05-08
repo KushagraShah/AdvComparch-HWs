@@ -29,42 +29,42 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/.apc/.src</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel2/prj_kernel2/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/.apc/.tb</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel2/prj_kernel2/.apc/.tb</location>
 		</link>
 		<link>
-			<name>original/constraints</name>
+			<name>optimized/constraints</name>
 			<type>2</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/original/.tcls</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel2/prj_kernel2/optimized/.tcls</location>
 		</link>
 		<link>
 			<name>source/kernel2.cpp</name>
 			<type>1</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/kernel2.cpp</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel2/kernel2.cpp</location>
 		</link>
 		<link>
 			<name>testbench/kernel2_test.cpp</name>
 			<type>1</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/kernel2_test.cpp</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel2/kernel2_test.cpp</location>
 		</link>
 		<link>
-			<name>original/constraints/.xml.directive</name>
+			<name>optimized/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/original/original.directive</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel2/prj_kernel2/optimized/optimized.directive</location>
 		</link>
 		<link>
-			<name>original/constraints/directives.tcl</name>
+			<name>optimized/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/original/directives.tcl</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel2/prj_kernel2/optimized/directives.tcl</location>
 		</link>
 		<link>
-			<name>original/constraints/script.tcl</name>
+			<name>optimized/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel2/prj_kernel2/original/script.tcl</location>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel2/prj_kernel2/optimized/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

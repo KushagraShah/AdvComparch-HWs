@@ -11,7 +11,11 @@
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog/>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xD;&#xA;   between 'select' operation ('sum', kernel7.cpp:9) and 'fadd' operation ('sum', kernel7.cpp:10)." projectName="prj_kernel7" solutionName="optimized" date="2021-05-09T00:03:04.078+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xD;&#xA;   between 'select' operation ('sum', kernel7.cpp:9) and 'fadd' operation ('sum', kernel7.cpp:10)." projectName="prj_kernel7" solutionName="optimized" date="2021-05-09T00:03:04.062+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between 'select' operation ('sum', kernel7.cpp:9) and 'fadd' operation ('sum', kernel7.cpp:10)." projectName="prj_kernel7" solutionName="optimized" date="2021-05-09T00:03:04.046+0200" type="Warning"/>
+      </synLog>
       <simLog/>
       <mgLog/>
       <packageLog/>

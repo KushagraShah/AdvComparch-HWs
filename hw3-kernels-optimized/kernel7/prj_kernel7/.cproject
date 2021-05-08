@@ -173,9 +173,9 @@
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/ap_sysc"/>
                                 								
-                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
+                                <listOptionValue builtIn="false" value="C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel7"/>
                                 								
-                                <listOptionValue builtIn="false" value="C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
                                 							
                             </option>
                             							
@@ -189,7 +189,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="original|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="optimized|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -351,9 +351,9 @@
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/ap_sysc"/>
                                 								
-                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
+                                <listOptionValue builtIn="false" value="C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel7"/>
                                 								
-                                <listOptionValue builtIn="false" value="C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel7"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
                                 							
                             </option>
                             							
@@ -367,7 +367,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="original|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="optimized|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

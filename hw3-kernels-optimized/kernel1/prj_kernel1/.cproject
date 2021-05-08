@@ -165,13 +165,13 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.917998134" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
+                                <listOptionValue builtIn="false" value="C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel1"/>
+                                								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/etc"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel1"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/ap_sysc"/>
                                 								
@@ -189,7 +189,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="original|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="optimized|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -343,13 +343,13 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.585010696" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
+                                <listOptionValue builtIn="false" value="C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels-optimized/kernel1"/>
+                                								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/etc"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel1"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/ap_sysc"/>
                                 								
@@ -367,7 +367,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="original|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="optimized|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

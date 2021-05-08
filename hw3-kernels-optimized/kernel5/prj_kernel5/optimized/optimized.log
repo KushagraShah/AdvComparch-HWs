@@ -1,0 +1,124 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel5.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.332 ; gain = 97.078
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.332 ; gain = 97.078
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.332 ; gain = 97.078
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.332 ; gain = 97.078
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 186.332 ; gain = 97.078
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 186.332 ; gain = 97.078
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel5' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('and' operation ('and_ln7', kernel5.cpp:7)) in the first pipeline iteration (II = 1 cycles).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'fadd' operation ('sum', kernel5.cpp:9) and 'icmp' operation ('icmp_ln7_1', kernel5.cpp:7).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'fadd' operation ('sum', kernel5.cpp:9) and 'icmp' operation ('icmp_ln7_1', kernel5.cpp:7).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: loop): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'fadd' operation ('sum', kernel5.cpp:9) and 'icmp' operation ('icmp_ln7_1', kernel5.cpp:7).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: loop): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between 'fadd' operation ('sum', kernel5.cpp:9) and 'icmp' operation ('icmp_ln7_1', kernel5.cpp:7).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: loop): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'fadd' operation ('sum', kernel5.cpp:9) and 'fcmp' operation ('tmp_3', kernel5.cpp:7).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 7, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.699 seconds; current allocated memory: 101.778 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.085 seconds; current allocated memory: 101.955 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel5/bound' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel5/a' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel5/b' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel5' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'kernel5_fadd_32ns_32ns_32_4_full_dsp_1' to 'kernel5_fadd_32nsbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'kernel5_fcmp_32ns_32ns_1_2_1' to 'kernel5_fcmp_32nscud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'kernel5_fadd_32nsbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'kernel5_fcmp_32nscud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel5'.
+INFO: [HLS 200-111]  Elapsed time: 0.138 seconds; current allocated memory: 102.352 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 129.58 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 186.332 ; gain = 97.078
+INFO: [VHDL 208-304] Generating VHDL RTL for kernel5.
+INFO: [VLOG 209-307] Generating Verilog RTL for kernel5.
+INFO: [HLS 200-112] Total elapsed time: 8.5 seconds; peak allocated memory: 102.352 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel5.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.109 ; gain = 95.531
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.109 ; gain = 95.531
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.109 ; gain = 95.531
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.109 ; gain = 95.531
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.109 ; gain = 95.531
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 186.109 ; gain = 95.531
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel5' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('and' operation ('and_ln7', kernel5.cpp:7)) in the first pipeline iteration (II = 1 cycles).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'fadd' operation ('sum', kernel5.cpp:9) and 'icmp' operation ('icmp_ln7_1', kernel5.cpp:7).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'fadd' operation ('sum', kernel5.cpp:9) and 'icmp' operation ('icmp_ln7_1', kernel5.cpp:7).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: loop): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'fadd' operation ('sum', kernel5.cpp:9) and 'icmp' operation ('icmp_ln7_1', kernel5.cpp:7).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: loop): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between 'fadd' operation ('sum', kernel5.cpp:9) and 'icmp' operation ('icmp_ln7_1', kernel5.cpp:7).
+WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: loop): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'fadd' operation ('sum', kernel5.cpp:9) and 'fcmp' operation ('tmp_3', kernel5.cpp:7).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 7, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.677 seconds; current allocated memory: 101.778 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.079 seconds; current allocated memory: 101.955 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel5/bound' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel5/a' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel5/b' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel5' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'kernel5_fadd_32ns_32ns_32_4_full_dsp_1' to 'kernel5_fadd_32nsbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'kernel5_fcmp_32ns_32ns_1_2_1' to 'kernel5_fcmp_32nscud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'kernel5_fadd_32nsbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'kernel5_fcmp_32nscud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel5'.
+INFO: [HLS 200-111]  Elapsed time: 0.125 seconds; current allocated memory: 102.352 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 129.58 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 186.109 ; gain = 95.531
+INFO: [VHDL 208-304] Generating VHDL RTL for kernel5.
+INFO: [VLOG 209-307] Generating Verilog RTL for kernel5.
+INFO: [HLS 200-112] Total elapsed time: 8.469 seconds; peak allocated memory: 102.352 MB.

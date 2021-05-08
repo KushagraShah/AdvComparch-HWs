@@ -12,7 +12,9 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel2/array' to 'kernel2/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel2" solutionName="original" date="2021-05-07T23:15:32.882+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel2/array' to 'kernel2/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel2" solutionName="optimized" date="2021-05-08T22:33:35.838+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'array' (kernel2.cpp:3)." projectName="prj_kernel2" solutionName="optimized" date="2021-05-08T22:33:35.807+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel2/array' to 'kernel2/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel2" solutionName="original" date="2021-05-08T22:17:52.631+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

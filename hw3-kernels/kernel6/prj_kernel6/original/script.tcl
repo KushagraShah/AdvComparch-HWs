@@ -10,7 +10,7 @@ add_files -tb kernel6_test.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-u
 open_solution "original"
 set_part {xc7k160t-fbg484-1}
 create_clock -period 10 -name default
-#source "./prj_kernel6/original/directives.tcl"
+source "./prj_kernel6/original/directives.tcl"
 csim_design
 csynth_design
 cosim_design
