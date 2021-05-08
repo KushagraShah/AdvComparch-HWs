@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel2/array' to 'kernel2/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel2" solutionName="dependence" date="2021-05-08T14:37:22.583+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'array' (kernel2.cpp:3)." projectName="prj_kernel2" solutionName="dependence" date="2021-05-08T14:37:22.545+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('array_load', kernel2.cpp:7) on array 'array_r' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'array_r'." projectName="prj_kernel2" solutionName="test" date="2021-05-08T02:01:14.631+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel2/array' to 'kernel2/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel2" solutionName="test" date="2021-05-08T02:01:14.584+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'array' (kernel2.cpp:3)." projectName="prj_kernel2" solutionName="test" date="2021-05-08T02:01:14.537+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'array' (kernel2.cpp:3) accessed through non-constant indices on dimension 1 (kernel2.cpp:7:9), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="prj_kernel2" solutionName="pipeline" date="2021-05-08T01:05:55.198+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel2/array' to 'kernel2/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel2" solutionName="original" date="2021-05-07T23:15:32.882+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

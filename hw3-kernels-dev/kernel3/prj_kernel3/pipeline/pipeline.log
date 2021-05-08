@@ -1,0 +1,193 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel3.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.309 ; gain = 95.531
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.309 ; gain = 95.531
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 185.309 ; gain = 95.531
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 185.309 ; gain = 95.531
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 185.309 ; gain = 95.531
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 185.309 ; gain = 95.531
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel3' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 7, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.831 seconds; current allocated memory: 101.667 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.102 seconds; current allocated memory: 101.802 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel3/hist' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel3/weight' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel3/index' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel3' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'kernel3_fadd_32ns_32ns_32_4_full_dsp_1' to 'kernel3_fadd_32nsbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'kernel3_fadd_32nsbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel3'.
+INFO: [HLS 200-111]  Elapsed time: 0.125 seconds; current allocated memory: 102.153 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 129.58 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 185.309 ; gain = 95.531
+INFO: [VHDL 208-304] Generating VHDL RTL for kernel3.
+INFO: [VLOG 209-307] Generating Verilog RTL for kernel3.
+INFO: [HLS 200-112] Total elapsed time: 8.5 seconds; peak allocated memory: 102.153 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel3.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.172 ; gain = 95.914
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.172 ; gain = 95.914
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.172 ; gain = 95.914
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.172 ; gain = 95.914
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 186.172 ; gain = 95.914
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 186.172 ; gain = 95.914
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel3' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln7', kernel3.cpp:7) of variable 'tmp', kernel3.cpp:7 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:7) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln7', kernel3.cpp:7) of variable 'tmp', kernel3.cpp:7 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:7) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln7', kernel3.cpp:7) of variable 'tmp', kernel3.cpp:7 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:7) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln7', kernel3.cpp:7) of variable 'tmp', kernel3.cpp:7 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:7) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln7', kernel3.cpp:7) of variable 'tmp', kernel3.cpp:7 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:7) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln7', kernel3.cpp:7) of variable 'tmp', kernel3.cpp:7 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:7) on array 'hist'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 7, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.66 seconds; current allocated memory: 101.640 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.058 seconds; current allocated memory: 101.774 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel3/hist' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel3/weight' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel3/index' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel3' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'kernel3_fadd_32ns_32ns_32_4_full_dsp_1' to 'kernel3_fadd_32nsbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'kernel3_fadd_32nsbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel3'.
+INFO: [HLS 200-111]  Elapsed time: 0.099 seconds; current allocated memory: 102.126 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 129.58 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 186.172 ; gain = 95.914
+INFO: [VHDL 208-304] Generating VHDL RTL for kernel3.
+INFO: [VLOG 209-307] Generating Verilog RTL for kernel3.
+INFO: [HLS 200-112] Total elapsed time: 8.102 seconds; peak allocated memory: 102.126 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel3.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.848 ; gain = 96.387
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.848 ; gain = 96.387
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.848 ; gain = 96.387
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.848 ; gain = 96.387
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.848 ; gain = 96.387
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.848 ; gain = 96.387
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel3' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: loop): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 7, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.613 seconds; current allocated memory: 101.636 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.074 seconds; current allocated memory: 101.770 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel3/hist' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel3/weight' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel3/index' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel3' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'kernel3_fadd_32ns_32ns_32_4_full_dsp_1' to 'kernel3_fadd_32nsbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'kernel3_fadd_32nsbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel3'.
+INFO: [HLS 200-111]  Elapsed time: 0.124 seconds; current allocated memory: 102.122 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 129.58 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 185.848 ; gain = 96.387
+INFO: [VHDL 208-304] Generating VHDL RTL for kernel3.
+INFO: [VLOG 209-307] Generating Verilog RTL for kernel3.
+INFO: [HLS 200-112] Total elapsed time: 8.202 seconds; peak allocated memory: 102.122 MB.

@@ -1,0 +1,54 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel8.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.348 ; gain = 94.938
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.348 ; gain = 94.938
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.348 ; gain = 94.938
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 185.348 ; gain = 94.938
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 185.348 ; gain = 94.938
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 185.348 ; gain = 94.938
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel8' ...
+WARNING: [SYN 201-107] Renaming port name 'kernel8/array' to 'kernel8/array_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel8' (Loop: loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('array_addr_1_write_ln7', kernel8.cpp:7) of variable 'mul_ln7', kernel8.cpp:7 on array 'array_r' and 'load' operation ('array_load', kernel8.cpp:7) on array 'array_r'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel8' (Loop: loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'store' operation ('array_addr_1_write_ln7', kernel8.cpp:7) of variable 'mul_ln7', kernel8.cpp:7 on array 'array_r' and 'load' operation ('array_load', kernel8.cpp:7) on array 'array_r'.
+WARNING: [SCHED 204-68] The II Violation in module 'kernel8' (Loop: loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'store' operation ('array_addr_1_write_ln7', kernel8.cpp:7) of variable 'mul_ln7', kernel8.cpp:7 on array 'array_r' and 'load' operation ('array_load', kernel8.cpp:7) on array 'array_r'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.768 seconds; current allocated memory: 101.750 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.066 seconds; current allocated memory: 101.892 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel8/array_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel8/multiplier' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel8/offset' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel8' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel8'.
+INFO: [HLS 200-111]  Elapsed time: 0.095 seconds; current allocated memory: 102.146 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 151.98 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 185.348 ; gain = 94.938
+INFO: [VHDL 208-304] Generating VHDL RTL for kernel8.
+INFO: [VLOG 209-307] Generating Verilog RTL for kernel8.
+INFO: [HLS 200-112] Total elapsed time: 8.051 seconds; peak allocated memory: 102.146 MB.
