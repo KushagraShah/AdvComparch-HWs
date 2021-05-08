@@ -42,9 +42,19 @@
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/original/.tcls</location>
 		</link>
 		<link>
+			<name>pipeline/constraints</name>
+			<type>2</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/pipeline/.tcls</location>
+		</link>
+		<link>
 			<name>source/kernel5.cpp</name>
 			<type>1</type>
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/kernel5.cpp</location>
+		</link>
+		<link>
+			<name>test/constraints</name>
+			<type>2</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/test/.tcls</location>
 		</link>
 		<link>
 			<name>testbench/kernel5_test.cpp</name>
@@ -65,6 +75,36 @@
 			<name>original/constraints/script.tcl</name>
 			<type>1</type>
 			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/original/script.tcl</location>
+		</link>
+		<link>
+			<name>pipeline/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/pipeline/pipeline.directive</location>
+		</link>
+		<link>
+			<name>pipeline/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/pipeline/directives.tcl</location>
+		</link>
+		<link>
+			<name>pipeline/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/pipeline/script.tcl</location>
+		</link>
+		<link>
+			<name>test/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/test/test.directive</location>
+		</link>
+		<link>
+			<name>test/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/test/directives.tcl</location>
+		</link>
+		<link>
+			<name>test/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Git/HLS/hw3-kernels/kernel5/prj_kernel5/test/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

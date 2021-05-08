@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "kernel5",
+          "label": "loop",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "kernel5",
+          "label": "loop",
+          "functionLabel": "",
+          "pragma": {
+            "name": "DEPENDENCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "sum"
+              },
+              {
+                "name": "inter",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "false",
+                "value": "",
+                "positionalBoolean": "dependent"
+              }
+            ]
+          }
+        }
+      ]
+    }]}
