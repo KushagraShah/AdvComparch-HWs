@@ -1,9 +1,0 @@
-{"sourceFile": [{
-      "name": "",
-      "directive": [{
-          "functionName": "kernel4",
-          "label": "loop",
-          "functionLabel": "",
-          "pragma": {"name": "PIPELINE"}
-        }]
-    }]}

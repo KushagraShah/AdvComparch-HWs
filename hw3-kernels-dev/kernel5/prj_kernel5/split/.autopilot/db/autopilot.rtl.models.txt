@@ -1,4 +1,0 @@
-kernel5_fadd_32nsbkb
-kernel5_fcmp_32nscud
-kernel5_tmp
-kernel5
