@@ -1,0 +1,113 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "kernel5",
+          "label": "loop",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "kernel5",
+          "label": "fill",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "kernel5",
+          "label": "shift",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "kernel5",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "sum",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "complete",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "kernel5",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "flag",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "complete",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "kernel5",
+          "label": "newsh",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "kernel5",
+          "label": "shift1",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "kernel5",
+          "label": "shift2",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "kernel5",
+          "label": "loop",
+          "functionLabel": "",
+          "pragma": {
+            "name": "DEPENDENCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "flag"
+              },
+              {
+                "name": "intra",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "true",
+                "value": "",
+                "positionalBoolean": "dependent"
+              }
+            ]
+          }
+        }
+      ]
+    }]}

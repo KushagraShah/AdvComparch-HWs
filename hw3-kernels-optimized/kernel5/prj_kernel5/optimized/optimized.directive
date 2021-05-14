@@ -1,0 +1,44 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="kernel5" label="loop" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="kernel5" label="fill" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="kernel5" label="shift" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="kernel5" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="sum" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="kernel5" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="flag" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="kernel5" label="newsh" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="kernel5" label="shift1" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="kernel5" label="shift2" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="kernel5" label="loop" functionLabel="">
+            <pragma name="DEPENDENCE">
+                <option name="variable" value="flag"/>
+                <option name="intra" value="" positionalBoolean="type"/>
+                <option name="true" value="" positionalBoolean="dependent"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

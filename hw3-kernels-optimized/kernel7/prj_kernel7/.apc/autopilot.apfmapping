@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="kernel7.cpp" path="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels-optimized\kernel7\kernel7.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="kernel7_test.cpp" path="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels-optimized\kernel7\kernel7_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

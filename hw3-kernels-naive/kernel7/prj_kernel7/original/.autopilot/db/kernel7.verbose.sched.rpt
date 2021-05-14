@@ -1,0 +1,231 @@
+
+
+================================================================
+== Vivado HLS Report for 'kernel7'
+================================================================
+* Date:           Fri May  7 23:32:26 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        prj_kernel7
+* Solution:       original
+* Product family: kintex7
+* Target device:  xc7k160t-fbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.348 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    10241|    10241| 0.102 ms | 0.102 ms |  10241|  10241|   none  |
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop    |    10240|    10240|        10|          -|          -|  1024|    no    |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 11
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.06>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([1024 x float]* %a) nounwind, !map !7"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([1024 x float]* %b) nounwind, !map !13"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float 0.000000e+00) nounwind, !map !17"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @kernel7_str) nounwind"   --->   Operation 15 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (1.06ns)   --->   "br label %1" [kernel7.cpp:6]   --->   Operation 16 'br' <Predicate = true> <Delay = 1.06>
+
+State 2 <SV = 1> <Delay = 2.66>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%sum_0 = phi float [ 0.000000e+00, %0 ], [ %sum_1, %_ifconv ]"   --->   Operation 17 'phi' 'sum_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%i_0 = phi i11 [ 0, %0 ], [ %i, %_ifconv ]"   --->   Operation 18 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (1.32ns)   --->   "%icmp_ln6 = icmp eq i11 %i_0, -1024" [kernel7.cpp:6]   --->   Operation 19 'icmp' 'icmp_ln6' <Predicate = true> <Delay = 1.32> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1024, i64 1024, i64 1024) nounwind"   --->   Operation 20 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (1.42ns)   --->   "%i = add i11 %i_0, 1" [kernel7.cpp:6]   --->   Operation 21 'add' 'i' <Predicate = true> <Delay = 1.42> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "br i1 %icmp_ln6, label %2, label %_ifconv" [kernel7.cpp:6]   --->   Operation 22 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln8 = zext i11 %i_0 to i64" [kernel7.cpp:8]   --->   Operation 23 'zext' 'zext_ln8' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%a_addr = getelementptr [1024 x float]* %a, i64 0, i64 %zext_ln8" [kernel7.cpp:8]   --->   Operation 24 'getelementptr' 'a_addr' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_2 : Operation 25 [2/2] (2.66ns)   --->   "%a_load = load float* %a_addr, align 4" [kernel7.cpp:8]   --->   Operation 25 'load' 'a_load' <Predicate = (!icmp_ln6)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%b_addr = getelementptr [1024 x float]* %b, i64 0, i64 %zext_ln8" [kernel7.cpp:8]   --->   Operation 26 'getelementptr' 'b_addr' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+ST_2 : Operation 27 [2/2] (2.66ns)   --->   "%b_load = load float* %b_addr, align 4" [kernel7.cpp:8]   --->   Operation 27 'load' 'b_load' <Predicate = (!icmp_ln6)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "ret float %sum_0" [kernel7.cpp:12]   --->   Operation 28 'ret' <Predicate = (icmp_ln6)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.66>
+ST_3 : Operation 29 [1/2] (2.66ns)   --->   "%a_load = load float* %a_addr, align 4" [kernel7.cpp:8]   --->   Operation 29 'load' 'a_load' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 30 [1/2] (2.66ns)   --->   "%b_load = load float* %b_addr, align 4" [kernel7.cpp:8]   --->   Operation 30 'load' 'b_load' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+
+State 4 <SV = 3> <Delay = 7.71>
+ST_4 : Operation 31 [4/4] (7.71ns)   --->   "%diff = fsub float %a_load, %b_load" [kernel7.cpp:8]   --->   Operation 31 'fsub' 'diff' <Predicate = true> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 7.71>
+ST_5 : Operation 32 [3/4] (7.71ns)   --->   "%diff = fsub float %a_load, %b_load" [kernel7.cpp:8]   --->   Operation 32 'fsub' 'diff' <Predicate = true> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 7.71>
+ST_6 : Operation 33 [2/4] (7.71ns)   --->   "%diff = fsub float %a_load, %b_load" [kernel7.cpp:8]   --->   Operation 33 'fsub' 'diff' <Predicate = true> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 7.71>
+ST_7 : Operation 34 [1/4] (7.71ns)   --->   "%diff = fsub float %a_load, %b_load" [kernel7.cpp:8]   --->   Operation 34 'fsub' 'diff' <Predicate = true> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 7.71>
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%bitcast_ln9 = bitcast float %diff to i32" [kernel7.cpp:9]   --->   Operation 35 'bitcast' 'bitcast_ln9' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%tmp = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln9, i32 23, i32 30)" [kernel7.cpp:9]   --->   Operation 36 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%trunc_ln9 = trunc i32 %bitcast_ln9 to i23" [kernel7.cpp:9]   --->   Operation 37 'trunc' 'trunc_ln9' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (1.22ns)   --->   "%icmp_ln9 = icmp ne i8 %tmp, -1" [kernel7.cpp:9]   --->   Operation 38 'icmp' 'icmp_ln9' <Predicate = true> <Delay = 1.22> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 39 [1/1] (1.51ns)   --->   "%icmp_ln9_1 = icmp eq i23 %trunc_ln9, 0" [kernel7.cpp:9]   --->   Operation 39 'icmp' 'icmp_ln9_1' <Predicate = true> <Delay = 1.51> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 40 [2/2] (3.34ns)   --->   "%tmp_1 = fcmp ogt float %diff, 0.000000e+00" [kernel7.cpp:9]   --->   Operation 40 'fcmp' 'tmp_1' <Predicate = true> <Delay = 3.34> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 3.34> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 41 [4/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %diff" [kernel7.cpp:10]   --->   Operation 41 'fadd' 'sum' <Predicate = true> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 7.71>
+ST_9 : Operation 42 [1/2] (3.34ns)   --->   "%tmp_1 = fcmp ogt float %diff, 0.000000e+00" [kernel7.cpp:9]   --->   Operation 42 'fcmp' 'tmp_1' <Predicate = true> <Delay = 3.34> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 3.34> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 43 [3/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %diff" [kernel7.cpp:10]   --->   Operation 43 'fadd' 'sum' <Predicate = true> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 7.71>
+ST_10 : Operation 44 [2/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %diff" [kernel7.cpp:10]   --->   Operation 44 'fadd' 'sum' <Predicate = true> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 8.34>
+ST_11 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str) nounwind" [kernel7.cpp:7]   --->   Operation 45 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node sum_1)   --->   "%or_ln9 = or i1 %icmp_ln9_1, %icmp_ln9" [kernel7.cpp:9]   --->   Operation 46 'or' 'or_ln9' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node sum_1)   --->   "%and_ln9 = and i1 %or_ln9, %tmp_1" [kernel7.cpp:9]   --->   Operation 47 'and' 'and_ln9' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 48 [1/4] (7.71ns)   --->   "%sum = fadd float %sum_0, %diff" [kernel7.cpp:10]   --->   Operation 48 'fadd' 'sum' <Predicate = true> <Delay = 7.71> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 7.71> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 49 [1/1] (0.63ns) (out node of the LUT)   --->   "%sum_1 = select i1 %and_ln9, float %sum, float %sum_0" [kernel7.cpp:9]   --->   Operation 49 'select' 'sum_1' <Predicate = true> <Delay = 0.63> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.63> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 50 [1/1] (0.00ns)   --->   "br label %1" [kernel7.cpp:6]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.06ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('sum') with incoming values : ('sum', kernel7.cpp:9) [9]  (1.06 ns)
+
+ <State 2>: 2.66ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', kernel7.cpp:6) [10]  (0 ns)
+	'getelementptr' operation ('a_addr', kernel7.cpp:8) [18]  (0 ns)
+	'load' operation ('a_load', kernel7.cpp:8) on array 'a' [19]  (2.66 ns)
+
+ <State 3>: 2.66ns
+The critical path consists of the following:
+	'load' operation ('a_load', kernel7.cpp:8) on array 'a' [19]  (2.66 ns)
+
+ <State 4>: 7.72ns
+The critical path consists of the following:
+	'fsub' operation ('diff', kernel7.cpp:8) [22]  (7.72 ns)
+
+ <State 5>: 7.72ns
+The critical path consists of the following:
+	'fsub' operation ('diff', kernel7.cpp:8) [22]  (7.72 ns)
+
+ <State 6>: 7.72ns
+The critical path consists of the following:
+	'fsub' operation ('diff', kernel7.cpp:8) [22]  (7.72 ns)
+
+ <State 7>: 7.72ns
+The critical path consists of the following:
+	'fsub' operation ('diff', kernel7.cpp:8) [22]  (7.72 ns)
+
+ <State 8>: 7.72ns
+The critical path consists of the following:
+	'fadd' operation ('sum', kernel7.cpp:10) [31]  (7.72 ns)
+
+ <State 9>: 7.72ns
+The critical path consists of the following:
+	'fadd' operation ('sum', kernel7.cpp:10) [31]  (7.72 ns)
+
+ <State 10>: 7.72ns
+The critical path consists of the following:
+	'fadd' operation ('sum', kernel7.cpp:10) [31]  (7.72 ns)
+
+ <State 11>: 8.35ns
+The critical path consists of the following:
+	'fadd' operation ('sum', kernel7.cpp:10) [31]  (7.72 ns)
+	'select' operation ('sum', kernel7.cpp:9) [32]  (0.631 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

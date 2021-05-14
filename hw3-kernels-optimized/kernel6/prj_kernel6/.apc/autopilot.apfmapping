@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="kernel6.cpp" path="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel6\kernel6.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="kernel6_test.cpp" path="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel6\kernel6_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

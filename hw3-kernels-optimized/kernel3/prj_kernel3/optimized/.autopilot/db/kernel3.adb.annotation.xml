@@ -1,0 +1,9 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="11" filename="kernel3.cpp" linenumber="5" name="icmp_ln5" contextFuncName="kernel3" moduleName="kernel3" rtlName="icmp_ln5_fu_96_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel3"><\/item>
+<item  id="13" filename="kernel3.cpp" linenumber="5" name="i" contextFuncName="kernel3" moduleName="kernel3" rtlName="i_fu_102_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel3"><\/item>
+<item  id="19" filename="kernel3.cpp" linenumber="6" name="zext_ln6" contextFuncName="kernel3" moduleName="kernel3" rtlName="zext_ln6_fu_108_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel3"><\/item>
+<item  id="22" filename="kernel3.cpp" linenumber="6" name="sext_ln6" contextFuncName="kernel3" moduleName="kernel3" rtlName="sext_ln6_fu_114_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel3"><\/item>
+<item  id="27" filename="kernel3.cpp" linenumber="6" name="tmp" contextFuncName="kernel3" moduleName="kernel3" rtlName="kernel3_fadd_32nsbkb_U1" latency="3" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel3"><\/item>
+<\/annotationInfo>
+</annotationInfo>

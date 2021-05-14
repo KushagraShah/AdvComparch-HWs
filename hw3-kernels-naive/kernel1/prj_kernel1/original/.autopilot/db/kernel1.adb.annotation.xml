@@ -1,0 +1,9 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="7" filename="kernel1.cpp" linenumber="6" name="icmp_ln6" contextFuncName="kernel1" moduleName="kernel1" rtlName="icmp_ln6_fu_50_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel1"><\/item>
+<item  id="9" filename="kernel1.cpp" linenumber="6" name="i" contextFuncName="kernel1" moduleName="kernel1" rtlName="i_fu_56_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel1"><\/item>
+<item  id="13" filename="kernel1.cpp" linenumber="7" name="zext_ln7" contextFuncName="kernel1" moduleName="kernel1" rtlName="zext_ln7_fu_62_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel1"><\/item>
+<item  id="16" filename="kernel1.cpp" linenumber="7" name="shl_ln7" contextFuncName="kernel1" moduleName="kernel1" rtlName="shl_ln7_fu_67_p2" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel1"><\/item>
+<item  id="17" filename="kernel1.cpp" linenumber="7" name="add_ln7" contextFuncName="kernel1" moduleName="kernel1" rtlName="array_r_d0" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Git\HLS\hw3-kernels\kernel1"><\/item>
+<\/annotationInfo>
+</annotationInfo>

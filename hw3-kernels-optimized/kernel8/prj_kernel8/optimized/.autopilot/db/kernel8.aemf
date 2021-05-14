@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1621026217537">
+  <ports id="1" name="array_r" type="PortType" originalName="array" coreName="RAM" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="1024">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="2" name="multiplier" type="PortType" originalName="multiplier" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="offset" type="PortType" originalName="offset" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="58" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="60" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="82" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="85" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="88" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="89" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="92" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="97" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="98" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="101" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="102" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="103" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="105" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="106" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="107" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="109" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="110" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="111" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3" is_back_edge="1"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3" is_back_edge="1"/>
+  <edges id="116" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4" is_back_edge="1"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4" is_back_edge="1"/>
+  <edges id="121" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="123" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="124" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="127" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="129" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="145" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="147" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="152" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="157" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="194" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="195" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="196" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="197" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@ports.0"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@ports.0"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@ports.0"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@ports.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@ports.0"/>
+  <blocks id="25" name="block_25" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_34</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="offset_read" lineNumber="3" originalName="offset" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" bitwidth="32" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="3" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <dataInputObjs>offset</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="multiplier_read" lineNumber="3" originalName="multiplier" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" bitwidth="32" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="3" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <dataInputObjs>multiplier</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="tmp_0" lineNumber="5" originalName="tmp[0]" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="2.66" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="5" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <dataInputObjs>array_r</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>array_r</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="tmp_1" lineNumber="5" originalName="tmp[1]" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="2.66" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="5" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <dataInputObjs>array_r</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>array_r</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="tmp_2" lineNumber="5" originalName="tmp[2]" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.66" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="5" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <dataInputObjs>array_r</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>array_r</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="tmp_3" lineNumber="5" originalName="tmp[3]" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.66" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="5" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <dataInputObjs>array_r</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>array_r</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="icmp_ln6" lineNumber="6" fileName="kernel8.cpp" fileDirectory=".." rtlName="icmp_ln6_fu_185_p2" contextFuncName="kernel8" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.54" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="6" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="icmp_ln6_1" lineNumber="6" fileName="kernel8.cpp" fileDirectory=".." rtlName="icmp_ln6_1_fu_191_p2" contextFuncName="kernel8" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.54" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="6" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="and_ln6" lineNumber="6" fileName="kernel8.cpp" fileDirectory=".." rtlName="and_ln6_fu_197_p2" contextFuncName="kernel8" bitwidth="1" opcode="and" nodeLabel="2.0" m_display="0" m_delay="0.61" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="6" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="sub_ln9" lineNumber="9" fileName="kernel8.cpp" fileDirectory=".." rtlName="sub_ln9_fu_203_p2" contextFuncName="kernel8" bitwidth="32" opcode="sub" nodeLabel="2.0" m_display="0" m_delay="1.78" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="9" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="xor_ln12" lineNumber="12" fileName="kernel8.cpp" fileDirectory=".." rtlName="xor_ln12_fu_213_p2" contextFuncName="kernel8" bitwidth="2" opcode="xor" nodeLabel="2.0" m_display="0" m_delay="0.61" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="12" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>mux</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln9" lineNumber="9" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" opcode="br" nodeLabel="2.0" m_display="0" m_delay="1.06" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="9" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+      <controlInputObjs>block_34</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="kernel8.cpp">
+      <validLinenumbers>3</validLinenumbers>
+      <validLinenumbers>5</validLinenumbers>
+      <validLinenumbers>6</validLinenumbers>
+      <validLinenumbers>9</validLinenumbers>
+      <validLinenumbers>12</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="55" name="block_55" type="BlockType">
+    <controlInputObjs>block_34</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="_ln23" lineNumber="23" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" opcode="ret" nodeLabel="7.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="kernel8.cpp" linenumber="23" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="kernel8.cpp">
+      <validLinenumbers>23</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="225" pipe_depth="4" RegionName="loop">
+    <basic_blocks id="34" name="block_34" type="BlockType">
+      <controlInputObjs>block_25</controlInputObjs>
+      <controlInputObjs>loop</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>loop</controlOutputObjs>
+      <controlOutputObjs>block_55</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp_2_1" originalName="tmp[3]" bitwidth="32" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+        <controlInputObjs>block_25</controlInputObjs>
+        <controlInputObjs>loop</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_1_1" originalName="tmp[2]" bitwidth="32" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+        <controlInputObjs>block_25</controlInputObjs>
+        <controlInputObjs>loop</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="tmp_0_1" originalName="tmp[1]" bitwidth="32" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+        <controlInputObjs>block_25</controlInputObjs>
+        <controlInputObjs>loop</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="tmp_0_0" originalName="tmp[0]" bitwidth="32" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+        <controlInputObjs>block_25</controlInputObjs>
+        <controlInputObjs>loop</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="i_0" originalName="i" bitwidth="31" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <controlInputObjs>block_25</controlInputObjs>
+        <controlInputObjs>loop</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="icmp_ln9" lineNumber="9" fileName="kernel8.cpp" fileDirectory=".." rtlName="icmp_ln9_fu_223_p2" contextFuncName="kernel8" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="1.54" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="kernel8.cpp" linenumber="9" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln9" lineNumber="9" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="kernel8.cpp" linenumber="9" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_55</controlInputObjs>
+        <controlInputObjs>loop</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="kernel8.cpp">
+        <validLinenumbers>9</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="53" name="loop" type="BlockType">
+      <controlInputObjs>block_34</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_34</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="rd_val" lineNumber="12" originalName="rd_val" fileName="kernel8.cpp" fileDirectory=".." rtlName="kernel8_mux_42_32bkb_U1" contextFuncName="kernel8" bitwidth="32" opcode="mux" nodeLabel="5.0" m_display="0" m_delay="1.26" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="kernel8.cpp" linenumber="12" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="add_ln14" lineNumber="14" fileName="kernel8.cpp" fileDirectory=".." rtlName="add_ln14_fu_228_p2" contextFuncName="kernel8" bitwidth="31" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.76" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="kernel8.cpp" linenumber="14" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="add_ln14_1" lineNumber="14" fileName="kernel8.cpp" fileDirectory=".." rtlName="add_ln14_1_fu_238_p2" contextFuncName="kernel8" bitwidth="32" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.78" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="kernel8.cpp" linenumber="14" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="rd_val_1" lineNumber="14" originalName="rd_val" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" bitwidth="32" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="2.66" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="kernel8.cpp" linenumber="14" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>array_r</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>array_r</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="rd_val_2" lineNumber="6" originalName="rd_val" fileName="kernel8.cpp" fileDirectory=".." rtlName="rd_val_2_fu_267_p3" contextFuncName="kernel8" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.63" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="kernel8.cpp" linenumber="6" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>mux</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="tmp_3_1" lineNumber="19" originalName="tmp[3]" fileName="kernel8.cpp" fileDirectory=".." rtlName="tmp_3_1_fu_273_p2" contextFuncName="kernel8" bitwidth="32" opcode="mul" nodeLabel="5.0" m_display="0" m_delay="6.58" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="kernel8.cpp" linenumber="19" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="array_addr_5_write_ln21" lineNumber="21" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" opcode="store" nodeLabel="6.0" m_display="0" m_delay="2.66" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="kernel8.cpp" linenumber="21" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>array_r</dataInputObjs>
+        <dataOutputObjs>array_r</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="i" lineNumber="9" originalName="i" fileName="kernel8.cpp" fileDirectory=".." rtlName="i_fu_248_p2" contextFuncName="kernel8" bitwidth="31" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.76" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="kernel8.cpp" linenumber="9" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="_ln9" lineNumber="9" fileName="kernel8.cpp" fileDirectory=".." contextFuncName="kernel8" opcode="br" nodeLabel="6.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="kernel8.cpp" linenumber="9" fileDirectory="C:\Users\Kushagra\Desktop\EPFL_Sem2\Advanced_Computer_Architecture\Homeworks\HW3\tmp\dhls\hw3-kernels-optimized\kernel8" functionName="kernel8"/>
+        <controlInputObjs>block_34</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="kernel8.cpp">
+        <validLinenumbers>12</validLinenumbers>
+        <validLinenumbers>14</validLinenumbers>
+        <validLinenumbers>6</validLinenumbers>
+        <validLinenumbers>19</validLinenumbers>
+        <validLinenumbers>21</validLinenumbers>
+        <validLinenumbers>9</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <regnodes realName="tmp_3_reg_328">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_1_1_reg_153">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_1_reg_298">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="rd_val_1_reg_362">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_2_reg_323">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_0_1_reg_164">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_2_1_reg_143">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_0_0_reg_175">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_0_reg_293">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="array_addr_1_reg_288">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="multiplier_read_reg_318">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="array_addr_2_reg_303">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln9_reg_348">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_357">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_3_1_reg_367">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="array_addr_4_reg_352">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="i_0_reg_131">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="sub_ln9_reg_338">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="array_addr_reg_283">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="offset_read_reg_313">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="and_ln6_reg_333">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="array_addr_3_reg_308">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="xor_ln12_reg_343">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <expressionNodes realName="rd_val_2_fu_267">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_0_0_phi_fu_178">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln12_fu_209">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="array_addr_4_gep_fu_115">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln9_fu_223">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln6_fu_185">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rd_val_fu_254">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_0_1_phi_fu_167">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="array_addr_2_gep_fu_97">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="array_addr_1_gep_fu_84">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_1_phi_fu_146">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="array_addr_gep_fu_70">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln14_fu_228">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="array_addr_3_gep_fu_106">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln12_fu_213">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_0_phi_fu_135">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln6_1_fu_191">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln6_fu_197">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln9_fu_203">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_248">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln14_1_fu_238">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln9_fu_219">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="array_addr_5_gep_fu_123">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln14_fu_234">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_1_phi_fu_156">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_1_fu_273">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln21_fu_278">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln14_fu_243">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="multiplier_read_read_fu_64">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="offset_read_read_fu_58">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="array_r">
+    <nodeIds>11</nodeIds>
+    <nodeIds>15</nodeIds>
+    <nodeIds>44</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="array_r" portID="1">
+    <nodeIds>13</nodeIds>
+    <nodeIds>17</nodeIds>
+    <nodeIds>49</nodeIds>
+  </memoryPorts>
+  <ioPorts name="array_r(p0)">
+    <contents name="load">
+      <nodeIds>11</nodeIds>
+      <nodeIds>15</nodeIds>
+      <nodeIds>44</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="array_r(p1)">
+    <contents name="load">
+      <nodeIds>13</nodeIds>
+      <nodeIds>17</nodeIds>
+    </contents>
+    <contents name="store">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="multiplier">
+    <contents name="read">
+      <nodeIds>9</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="offset">
+    <contents name="read">
+      <nodeIds>8</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="2" latency="2"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="11" stage="1" latency="2"/>
+      <operations id="13" stage="1" latency="2"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="2" latency="2"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="2"/>
+      <operations id="17" stage="1" latency="2"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="2" latency="2"/>
+      <operations id="51" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="44" stage="1" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="54" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="kernel8" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="2">
+      <basicBlocks>25</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="loop" mII="1" mDepth="4" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>34</basicBlocks>
+      <basicBlocks>53</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>55</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

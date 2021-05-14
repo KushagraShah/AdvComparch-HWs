@@ -1,0 +1,70 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Kushagra' on host 'desktop-7cm7rrt' (Windows NT_amd64 version 6.2) on Fri May 14 22:55:09 +0200 2021
+INFO: [HLS 200-10] In directory 'C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Homeworks/HW3/tmp/dhls/hw3-kernels-optimized/kernel5'
+Sourcing Tcl script 'C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Homeworks/HW3/tmp/dhls/hw3-kernels-optimized/kernel5/prj_kernel5/optimized/csynth.tcl'
+INFO: [HLS 200-10] Opening project 'C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Homeworks/HW3/tmp/dhls/hw3-kernels-optimized/kernel5/prj_kernel5'.
+INFO: [HLS 200-10] Adding design file 'kernel5.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'kernel5_test.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/Kushagra/Desktop/EPFL_Sem2/Advanced_Computer_Architecture/Homeworks/HW3/tmp/dhls/hw3-kernels-optimized/kernel5/prj_kernel5/optimized'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel5.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 186.113 ; gain = 95.863
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 186.113 ; gain = 95.863
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 186.113 ; gain = 95.863
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 186.113 ; gain = 95.863
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop' (kernel5.cpp:16) in function 'kernel5' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'shift1' (kernel5.cpp:21) in function 'kernel5' completely with a factor of 7.
+INFO: [HLS 200-489] Unrolling loop 'shift2' (kernel5.cpp:24) in function 'kernel5' completely with a factor of 5.
+INFO: [XFORM 203-101] Partitioning array 'sum' (kernel5.cpp:6) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'flag' (kernel5.cpp:7) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 186.113 ; gain = 95.863
+INFO: [ANALYSIS 214-51] Found intra dependency for variable 'flag[3]' (kernel5.cpp:7).
+INFO: [ANALYSIS 214-51] Found intra dependency for variable 'flag[5]' (kernel5.cpp:7).
+INFO: [ANALYSIS 214-51] Found intra dependency for variable 'flag[7]' (kernel5.cpp:7).
+INFO: [ANALYSIS 214-51] Found intra dependency for variable 'flag[6]' (kernel5.cpp:7).
+INFO: [ANALYSIS 214-51] Found intra dependency for variable 'flag[2]' (kernel5.cpp:7).
+INFO: [ANALYSIS 214-51] Found intra dependency for variable 'flag[1]' (kernel5.cpp:7).
+INFO: [ANALYSIS 214-51] Found intra dependency for variable 'flag[0]' (kernel5.cpp:7).
+INFO: [ANALYSIS 214-51] Found intra dependency for variable 'flag[4]' (kernel5.cpp:7).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 186.113 ; gain = 95.863
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel5' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'fill'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 8.
+INFO: [SCHED 204-61] Pipelining loop 'loop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.451 seconds; current allocated memory: 103.284 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.103 seconds; current allocated memory: 103.793 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel5/bound' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel5/a' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel5/b' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel5' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'kernel5_fadd_32ns_32ns_32_4_full_dsp_1' to 'kernel5_fadd_32nsbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'kernel5_fcmp_32ns_32ns_1_2_1' to 'kernel5_fcmp_32nscud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'kernel5_fadd_32nsbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'kernel5_fcmp_32nscud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel5'.
+INFO: [HLS 200-111]  Elapsed time: 0.195 seconds; current allocated memory: 104.702 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 129.58 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 186.113 ; gain = 95.863
+INFO: [VHDL 208-304] Generating VHDL RTL for kernel5.
+INFO: [VLOG 209-307] Generating Verilog RTL for kernel5.
+INFO: [HLS 200-112] Total elapsed time: 11.189 seconds; peak allocated memory: 104.702 MB.
