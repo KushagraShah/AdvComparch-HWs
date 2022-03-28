@@ -1,2 +1,2 @@
-# AdvComparch_HLS
-Vivado HLS Assignment (HW-3) for the Advanced Computer Architecture course (CS-470) at EPFL
+# AdvComparch
+Vivado HLS (HW-3) and Spectre Attack (HW-4) Assignments for the Advanced Computer Architecture course (CS-470) at EPFL
